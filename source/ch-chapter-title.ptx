@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ch-chapter-title" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Chapter Title</title>
+  <title>What is Go?</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> Go is the oldest game in the world, with evidence of it being played thousands of years ago in China.
+      The game is called Go (or Igo) in Japan.  It is called Weichi in China.  It is called
+      Baduk in Korea.  The game only reached the western world in the 1800s.  Go is a game of pure strategy. </p>
   </introduction>
 
   <!-- include sections -->
