@@ -16,7 +16,7 @@
         <latex-image>
           \white{c4,d4,e4,f4,g3,g2,c3}
           \black{b3,b2,c2,d3,e3,f3,f2}
-          \shortstack{\showgoban}
+          \showgoban
         </latex-image>
     </image>
   </figure>
