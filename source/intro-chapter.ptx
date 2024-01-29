@@ -11,7 +11,7 @@
 
   <figure>
     <caption>Life and Death Example</caption>
-    <image xml:id="example-go-board" width="100%">
+    <image xml:id="example-go-board" width="10%">
         <description>Example Go board.</description>
         <latex-image>
           \white{c4,d4,e4,f4,g3,g2,c3}
