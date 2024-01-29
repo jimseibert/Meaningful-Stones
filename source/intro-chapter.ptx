@@ -14,42 +14,9 @@
     <image xml:id="example-go-board" width="100%">
         <description>Example Go board.</description>
         <latex-image>
-          
-\begin{tikzpicture}
-
-\draw[very thick] (1,1) -- (7.4,1);
-\draw[very thick] (1,1) -- (1,5.4);
-
-\draw[step=1cm,gray,very thin] (1,1) grid (7.4,5.4);
-
-\fill (2,2) circle (.45cm);
-\fill (2,3) circle (.45cm);
-\fill (3,2) circle (.45cm);
-\fill (4,3) circle (.45cm);
-\fill (5,3) circle (.45cm);
-\fill (6,3) circle (.45cm);
-\fill (6,2) circle (.45cm);
-
-\fill[white] (2,4) circle (.45cm);
-\draw (2,4) circle (.45cm);
-\fill[white] (3,4) circle (.45cm);
-\draw (3,4) circle (.45cm);
-\fill[white] (3,3) circle (.45cm);
-\draw (3,3) circle (.45cm);
-\fill[white] (4,4) circle (.45cm);
-\draw (4,4) circle (.45cm);
-\fill[white] (5,4) circle (.45cm);
-\draw (5,4) circle (.45cm);
-\fill[white] (6,4) circle (.45cm);
-\draw (6,4) circle (.45cm);
-\fill[white] (7,3) circle (.45cm);
-\draw (7,3) circle (.45cm);
-\fill[white] (7,2) circle (.45cm);
-\draw (7,2) circle (.45cm);
-
-
-
-\end{tikzpicture}
+          \white{c4,d4,e4,f4,g3,g2,c3}
+          \black{b3,b2,c2,d3,e3,f3,f2}
+          \shortstack{\showgoban\\White to kill}
         </latex-image>
     </image>
   </figure>
