@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-capturing-stones" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Capturing Stones</title>
+
+  <p> Consider a stone in the middle of the board.
+
+    <figure>
+        <caption>A lonely stone.</caption>
+        <image xml:id="lone-stone">
+            <description>One stone on a go board.</description>
+            <latex-image>
+              \black{f6}
+              \showgoban
+            </latex-image>
+        </image>
+      </figure>
+
+</section>

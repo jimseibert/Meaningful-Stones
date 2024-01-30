@@ -4,11 +4,13 @@
   <title>How To Play Go?</title>
 
   <introduction>
-    <p> In the first section we will introduce the (very simple) rules of go, and following sections include beginner strategies, 
-        more terrminology, and some basic shapes to be aware of </p>
+    <p> In the first section we will introduce the rules of go.  The following sections will include 
+      more context and explanations of the rules, along with good beginner strategies. </p>
   </introduction>
 
   <!-- include sections -->
   <xi:include href="sec-rules-of-the-game.ptx" />
+
+  
 
 </chapter>
