@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-capturing-stones" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-capturing-stones" >
   <title>Capturing Stones</title>
 
   <p> Consider a stone in the middle of the board.
@@ -15,5 +15,6 @@
             </latex-image>
         </image>
       </figure>
+      </p>
 
 </section>
