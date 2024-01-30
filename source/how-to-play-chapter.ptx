@@ -11,6 +11,6 @@
   <!-- include sections -->
   <xi:include href="sec-rules-of-the-game.ptx" />
 
-  <xi:include href="sec-capturing-stones.ptx" />
+
 
 </chapter>
