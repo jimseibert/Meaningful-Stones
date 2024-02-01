@@ -4,4 +4,18 @@
   <title>Capturing Stones</title>
 
   <p> Consider this lone stone in the middle of the board.  </p>
+
+  <figure>
+    <caption>Life and Death Example</caption>
+    <image xml:id="example-go-board" width="100%">
+        <description>Example Go board.</description>
+        <latex-image>
+          \white{b4,c4,d4,e4,f4,g3,g2,c3}
+          \black{b3,b2,c2,d3,e3,f3,f2}
+          \largegoban \showgoban
+        </latex-image>
+    </image>
+  </figure>
+
+
 </section>  
