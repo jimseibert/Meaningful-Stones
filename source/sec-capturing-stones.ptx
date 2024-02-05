@@ -3,19 +3,75 @@
 <section xml:id="sec-capturing-stones" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Capturing Stones</title>
 
-  <p> Consider this lone stone in the middle of the board.  </p>
+  <p> Consider this lone stone in the middle of the board. 
 
-  <figure>
-    <caption>Life and Death Example</caption>
-    <image xml:id="example-go-board" width="100%">
-        <description>Example Go board.</description>
+  <figure xml:id="lone-stone">
+    <image  width="50%">
+        <description>Single black stone in the middle of the board.</description>
         <latex-image>
-          \white{b4,c4,d4,e4,f4,g3,g2,c3}
-          \black{b3,b2,c2,d3,e3,f3,f2}
-          \largegoban \showgoban
+          \black{k10}
+          \showgoban[h8,m12]
         </latex-image>
     </image>
   </figure>
+  
+  There are four points adjacent to this stone, following lines horizontally or vertically.
+  These are called the <em>liberties</em> of the stone.  If white manages to occupy all of 
+  this stone's liberties, then white will capture the stone and take it off the board.
 
+  <figure xml:id="lone-stone-liberties">
+    <image  width="50%">
+        <description>Single black stone, liberties marked.</description>
+        <latex-image>
+          \black{k10}
+          \gobansymbol{k9,k11,j10,l10}{a}
+          \showgoban[h8,m12]
+        </latex-image>
+    </image>
+  </figure>
+On the edge of the board or in the corner stones have fewer liberties.
+<figure xml:id="edge-and-corner-liberties">
+  <image  width="50%">
+      <description>Black stones on an edge and on a corner, liberties marked.</description>
+      <latex-image>
+        \cleargoban
+        \black{a1,f1}
+        \gobansymbol{a2,b1,g1,e1,f2}{a}
+        \showgoban
+      </latex-image>
+  </image>
+</figure>
+When stones of the same color are on adjacent intersections (horizontally or vertically, 
+<em>not diagonally</em>) we say they are connected.  A connected group of stones shares 
+their liberties.  For example, in <xref ref="group-liberties" /> the group of two stones in 
+the middle of the board share six liberties, and the group of two stones along the 
+edge share four.
+
+<figure  xml:id="group-liberties">
+  <image  width="50%">
+      <description>Two adjacent stones, edge and middle, liberties marked.</description>
+      <latex-image>
+        \cleargoban
+        \black{c1,d1,f4,f5}
+        \gobansymbol{b1,c2,d2,e1,f3,g4,g5,f6,e5,e4}{a}
+        \showgoban
+      </latex-image>
+  </image>
+</figure>
+
+<figure  xml:id="big-group-liberties">
+  <image  width="50%">
+      <description>Two adjacent stones, edge and middle, liberties marked.</description>
+      <latex-image>
+        \cleargoban
+        \black{c1,d1,d2,d3,d4}
+        \gobansymbol{b1,c2,c3,c4,d5,e4,e3,e2,e1}{a}
+        \showgoban
+      </latex-image>
+  </image>
+</figure>
+Can I reference <xref ref="big-group-liberties" />?
+
+</p>
 
 </section>  
