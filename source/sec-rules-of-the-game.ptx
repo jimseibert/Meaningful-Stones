@@ -3,7 +3,7 @@
 <section xml:id="sec-rules-of-the-game" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Rules of the Game of Go</title>
 
-  <p> There are very few rules in the game of go.  </p>
+  <p> There are very few rules in the game of go.  
 
   <ol> 
     <li>  Rule 1:  One player has white stones and the other player has black stones.  
@@ -13,19 +13,23 @@
       on 9 <times/> 9 or 13 <times/> 13 boards as well.  </li>
 
     <li>  Rule 2:  Surround your opponent's stones to capture them.  Captured stones are 
-      removed from the board and kept by the capturing player.
-      Details on capturing are in the next section.  </li>
+      removed from the board and kept by the capturing player.  </li>
 
-    <li>  Rule 3:  The player whose stones surround the most territory in the end wins the game.  
-      Details on starting the game (handicaps) and ending the game (counting points) is in section...  </li>
+    <li>  Rule 3:  The player whose stones surround the most territory 
+      in the end wins the game.  </li>
 
-    <li>  Rule 4:  Placing a stone that results in self-capture is not allowed.  See the next section.    </li>
+    <li>  Rule 4:  Placing a stone that results in self-capture is not allowed.  </li>
     
-    <li>  Rule 5:  Repetition of an identical board position is not allowed.  This will be 
-      explained further in section...
-   
-      </li>
+    <li>  Rule 5:  Repetition of an identical board position is not allowed 
+      (the <em>ko</em> rule). </li>
 
     </ol>
+
+    <figure>
+      <caption>Michael Redmond <articletitle>The 5 Rules of Go</articletitle></caption>
+      <video xml:id="five-rules" youtube="KTWujSwL2bQ" width="60%" start="12"  />
+    </figure>
+
+</p>
 
 </section>
