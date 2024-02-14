@@ -25,11 +25,107 @@
 
     </ol>
 
+    The video below introduces these rules in more detail.  Watch the video 
+    and work through the examples to test your understanding.
+
     <figure>
       <caption>Michael Redmond <articletitle>The 5 Rules of Go</articletitle></caption>
-      <video xml:id="five-rules" youtube="KTWujSwL2bQ" width="60%" start="12"  />
+      <video xml:id="five-rules" youtube="KTWujSwL2bQ" width="80%" start="0"  />
     </figure>
 
 </p>
+
+
+<example>
+  <title>Goups of stones</title>
+  <statement>
+    <p>
+      Recall that stones that are next to each other along horizontal or vertical lines
+      (but NOT diagonally)
+      are connected and form a single <em>group</em>.  In the following figure, how
+      many black groups are there?  How many white groups?
+
+      <figure  xml:id="count-groups">
+        <image  width="50%">
+            <description>Three black groups and two white groups.</description>
+            <latex-image>
+              \cleargoban
+              \black{b1,b2,c3,c4,d5,d6}
+              \white{c2,d2,d3,d4,e5,e6}
+              \showgoban
+            </latex-image>
+        </image>
+      </figure>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      There are three black groups (one group marked with triangles, one marked with squares,
+      and one marked with circles) and two white groups (one marked with crosses and 
+      the other with unmarked stones).
+  
+      <figure  xml:id="count-groups-sol">
+       <image  width="50%">
+           <description>Three black groups and two white groups, with the groups marked.</description>
+           <latex-image>
+             \cleargoban
+             \black[\igotriangle]{b1,b2}
+             \black[\igosquare]{c3,c4}
+             \black[\igocircle]{d5,d6}
+             \white[\igocross]{c2,d2,d3,d4}
+             \white{e5,e6}
+             \showgoban
+           </latex-image>
+       </image>
+     </figure>
+    </p>
+    
+  </answer>
+</example>
+
+<example>
+  <title>Counting liberties</title>
+  <statement>
+    <p>
+      Remember that spaces next to a group of stones (along horizontal or vertical lines)
+      are called the <em>liberties</em> of the group.  
+      There are two groups in the figure below.  How many liberties does each have?
+
+      <image  width="50%">
+        <description>One black group and one white group of stones.</description>
+        <latex-image>
+          \cleargoban
+          \black{b1,b2,c1,c2,d2}
+          \white{c5,d5,e5,e6,f5}
+          \showgoban
+        </latex-image>
+    </image>
+
+    </p>
+  </statement>
+  <answer>
+    <p>
+      The black group has seven liberties, and the white group has ten.
+    </p>
+  </answer>
+  <solution>
+    <p>
+      Here the liberties are marked.
+      <image  width="50%">
+        <description>One black group and one white group of stones, each with their liberties marked.</description>
+        <latex-image>
+          \cleargoban
+          \black{b1,b2,c1,c2,d2}
+          \white{c5,d5,e5,e6,f5}
+          \gobansymbol{a1,a2,b3,c3,d3,e2,d1}{x}
+          \gobansymbol{c4,d4,e4,f4,g5,f6,e7,d6,c6,b5}{y}
+          \showgoban
+        </latex-image>
+    </image>
+    </p>
+  </solution>
+</example>
+
+
 
 </section>
