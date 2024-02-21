@@ -6,7 +6,7 @@
 
   <book xml:id="my-great-book">
     <title>Meaningful Stones</title>
-    <subtitle>An RCC430M Class on the Game of Go</subtitle>
+    <subtitle>Life Lessons in the Game of Go (An RCC430M Class on the Game of Go)</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />

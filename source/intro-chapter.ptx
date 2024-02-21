@@ -4,11 +4,18 @@
   <title>What is Go?</title>
 
   <introduction>
-    <p> Go is a game.  Go is the oldest game in the world, with evidence of it being 
-      played for thousands of years in China.
-      The game is called Go (or Igo) in Japan.  It is called Weichi in China.  It is called
-      Baduk in Korea.  The game only reached the western world in the 1800s.  
-      Go is a game of complete information and pure strategy. </p>
+    <p> Go is a game.  </p> 
+    
+    <p>Go is the oldest game in the world, with evidence of it being 
+      played for thousands of years in China, where it is called Weichi (the surrounding 
+      game).  The game reached Korea in the 5th century,
+      where it is called Baduk.  The game reached Japan in the 7th century, where it 
+      is called Go (or Igo).  From its earliest incarnations, Go was considered a
+      worthy activity for aristocrats
+      and scholars.  In Japan, the first system of professional Go players was developed starting
+      in the 14th century.  The game only reached the western world in the 19th century.  </p>
+      
+    <p>Go is a game of complete information and pure strategy. </p>
   </introduction>
 
  

@@ -128,4 +128,64 @@
 
 
 
+
+
+
+<exercises xml:id="exercises-rules">
+  <title>Exercises</title>
+
+  <exercise>
+    <statement>
+      <p>
+        How many groups are depicted in this board?  How many liberties does each group have?  How many unoccupied liberties does each group have?
+
+
+        <image  width="50%">
+          <description>Two black groups and three white groups.</description>
+          <latex-image>
+            \cleargoban
+            \black{j8,j9,j10,k9,l9,k11,l11,m11}
+            \white{k10,l10,m10,m9,j11,h11,h10,k8,l8}
+            \showgoban
+          </latex-image>
+      </image>
+      </p>
+    </statement>
+    <hint>
+      <p>
+        Remember that diagonal stones are NOT connected!
+      </p>
+    </hint>
+    <solution>
+      <p>
+        There are two black groups and three white groups, numbered below.
+        <image  width="50%">
+          <description>Two black groups and three white groups, numbered.</description>
+          <latex-image>
+            \cleargoban
+            \black{j8,j9,j10,k9,l9,k11,l11,m11}
+            \white{k10,l10,m10,m9,j11,h11,h10,k8,l8}
+            \white[1]{h11,j9,l8,l11,m10}
+            \showgoban
+          </latex-image>
+      </image>
+      <ul>
+        <li>Group 1 has 3 stones, 7 total liberties, and 5 unoccupied liberties. </li>
+
+        <li>Group 2 has 5 stones, 10 total liberties, and 3 unoccupied liberties. </li>
+
+        <li>Group 3 has 2 stones, 6 total liberties, and 3 unoccupied liberties. </li>
+
+        <li>Group 4 has 3 stones, 8 total liberties, and 4 unoccupied liberties. </li>
+
+        <li>Group 5 has 4 stones, 9 total liberties, and 3 unoccupied liberties. </li>
+      </ul>
+      </p>
+    </solution>
+  </exercise>
+  
+  
+  
+</exercises>
+
 </section>
