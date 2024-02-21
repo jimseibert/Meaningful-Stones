@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Chapter",
   "number": "1",
   "title": "What is Go?",
-  "body": " What is Go?   Go is a game. Go is the oldest game in the world, with evidence of it being played for thousands of years in China. The game is called Go (or Igo) in Japan. It is called Weichi in China. It is called Baduk in Korea. The game only reached the western world in the 1800s. Go is a game of complete information and pure strategy.    "
+  "body": " What is Go?   Go is a game.  Go is the oldest game in the world, with evidence of it being played for thousands of years in China, where it is called Weichi (the surrounding game). The game reached Korea in the 5th century, where it is called Baduk. The game reached Japan in the 7th century, where it is called Go (or Igo). From its earliest incarnations, Go was considered a worthy activity for aristocrats and scholars. In Japan, the first system of professional Go players was developed starting in the 14th century. The game only reached the western world in the 19th century.  Go is a game of complete information and pure strategy.    "
 },
 {
   "id": "sec-rules-of-the-game",
@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Rules of the Game of Go",
-  "body": " Rules of the Game of Go  There are very few rules in the game of go.  Rule 1: One player has white stones and the other player has black stones. To begin black places one stone on any intersection on a grid. Players then alternate playing one stone each on any intersection of the grid. The grid is usually 19 19, but the game can be played on 9 9 or 13 13 boards as well.  Rule 2: Surround your opponent's stones to capture them. Captured stones are removed from the board and kept by the capturing player.  Rule 3: The player whose stones surround the most territory in the end wins the game.  Rule 4: Placing a stone that results in self-capture is not allowed.  Rule 5: Repetition of an identical board position is not allowed (the ko rule).  The video below introduces these rules in more detail. Watch the video and work through the examples to test your understanding.  Michael Redmond The 5 Rules of Go      Goups of stones   Recall that stones that are next to each other along horizontal or vertical lines (but NOT diagonally) are connected and form a single group . In the following figure, how many black groups are there? How many white groups?   Three black groups and two white groups.        There are three black groups (one group marked with triangles, one marked with squares, and one marked with circles) and two white groups (one marked with crosses and the other with unmarked stones).   Three black groups and two white groups, with the groups marked.         Counting liberties   Remember that spaces next to a group of stones (along horizontal or vertical lines) are called the liberties of the group. There are two groups in the figure below. How many liberties does each have?  One black group and one white group of stones.       The black group has seven liberties, and the white group has ten.    Here the liberties are marked.  One black group and one white group of stones, each with their liberties marked.       "
+  "body": " Rules of the Game of Go  There are very few rules in the game of go.  Rule 1: One player has white stones and the other player has black stones. To begin black places one stone on any intersection on a grid. Players then alternate playing one stone each on any intersection of the grid. The grid is usually 19 19, but the game can be played on 9 9 or 13 13 boards as well.  Rule 2: Surround your opponent's stones to capture them. Captured stones are removed from the board and kept by the capturing player.  Rule 3: The player whose stones surround the most territory in the end wins the game.  Rule 4: Placing a stone that results in self-capture is not allowed.  Rule 5: Repetition of an identical board position is not allowed (the ko rule).  The video below introduces these rules in more detail. Watch the video and work through the examples to test your understanding.  Michael Redmond The 5 Rules of Go      Goups of stones   Recall that stones that are next to each other along horizontal or vertical lines (but NOT diagonally) are connected and form a single group . In the following figure, how many black groups are there? How many white groups?   Three black groups and two white groups.        There are three black groups (one group marked with triangles, one marked with squares, and one marked with circles) and two white groups (one marked with crosses and the other with unmarked stones).   Three black groups and two white groups, with the groups marked.         Counting liberties   Remember that spaces next to a group of stones (along horizontal or vertical lines) are called the liberties of the group. There are two groups in the figure below. How many liberties does each have?  One black group and one white group of stones.       The black group has seven liberties, and the white group has ten.    Here the liberties are marked.  One black group and one white group of stones, each with their liberties marked.        Exercises   How many groups are depicted in this board? How many liberties does each group have? How many unoccupied liberties does each group have?  Two black groups and three white groups.      Remember that diagonal stones are NOT connected!   There are two black groups and three white groups, numbered below.  Two black groups and three white groups, numbered.     Group 1 has 3 stones, 7 total liberties, and 5 unoccupied liberties.  Group 2 has 5 stones, 10 total liberties, and 3 unoccupied liberties.  Group 3 has 2 stones, 6 total liberties, and 3 unoccupied liberties.  Group 4 has 3 stones, 8 total liberties, and 4 unoccupied liberties.  Group 5 has 4 stones, 9 total liberties, and 3 unoccupied liberties.      "
 },
 {
   "id": "sec-rules-of-the-game-2-2",
@@ -53,6 +53,15 @@ var ptx_lunr_docs = [
   "number": "2.1.5",
   "title": "Counting liberties.",
   "body": " Counting liberties   Remember that spaces next to a group of stones (along horizontal or vertical lines) are called the liberties of the group. There are two groups in the figure below. How many liberties does each have?  One black group and one white group of stones.       The black group has seven liberties, and the white group has ten.    Here the liberties are marked.  One black group and one white group of stones, each with their liberties marked.      "
+},
+{
+  "id": "exercises-rules-2",
+  "level": "2",
+  "url": "sec-rules-of-the-game.html#exercises-rules-2",
+  "type": "Exercise",
+  "number": "2.1.1",
+  "title": "",
+  "body": " How many groups are depicted in this board? How many liberties does each group have? How many unoccupied liberties does each group have?  Two black groups and three white groups.      Remember that diagonal stones are NOT connected!   There are two black groups and three white groups, numbered below.  Two black groups and three white groups, numbered.     Group 1 has 3 stones, 7 total liberties, and 5 unoccupied liberties.  Group 2 has 5 stones, 10 total liberties, and 3 unoccupied liberties.  Group 3 has 2 stones, 6 total liberties, and 3 unoccupied liberties.  Group 4 has 3 stones, 8 total liberties, and 4 unoccupied liberties.  Group 5 has 4 stones, 9 total liberties, and 3 unoccupied liberties.    "
 },
 {
   "id": "sec-capturing-stones",
@@ -121,6 +130,15 @@ var ptx_lunr_docs = [
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
+  "type": "Appendix",
+  "number": "A",
+  "title": "Selected Solutions",
+  "body": " Selected Solutions  "
+},
+{
+  "id": "backmatter-3",
+  "level": "1",
+  "url": "backmatter-3.html",
   "type": "Colophon",
   "number": "",
   "title": "Colophon",

@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="80pt" height="68pt" viewBox="0 0 80 68">
+<defs>
+<g id="font_1_1">
+<mask id="mask_2">
+<image id="image_3" width="94" height="94" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAF4AAABeCAAAAACPufyyAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAAASUlEQVR4nO3QoQ0AMAwDwey/tAuLXSmg0j12DmSmKt28LFn18Xg8
+Ho/H4/F4PB6Px+PvxWJf8+u/x+PxeDwej8fj8Xg8Ho9/4A/KPCX3MFR5/gAAAABJ
+RU5ErkJggg=="/>
+</mask>
+<rect x="0" y="0" width="94" height="94" transform="matrix(.0120399999,0,0,-.0120399999,-.01204,1.05952)" mask="url(#mask_2)"/>
+</g>
+<g id="font_1_10">
+<mask id="mask_4">
+<image id="image_5" width="94" height="94" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAF4AAABeCAAAAACPufyyAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAAAQUlEQVR4nO3ZsQ0AIAwDQfZf2hRMkCIiiLs6+t7KWiWpnRclrX35
+e3kAAAAYJunZwjnhl/MNXQAAAJjq7Vf8Z/kNwqY+wsNAGjcAAAAASUVORK5CYII="/>
+</mask>
+<rect x="0" y="0" width="94" height="94" transform="matrix(.0120399999,0,0,-.0120399999,-.01204,1.05952)" mask="url(#mask_4)"/>
+</g>
+<g id="font_6_1">
+<mask id="mask_7">
+<image id="image_8" width="83" height="83" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAAAAADG2WTcAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAABIklEQVR4nO3XSRLDIAxEUd//0mSTSoUA6t/CWlCxdwnq51ng65Jb
+6zcdsLh9eAlm2WU6zaqUr6KApfJaXGmdEyt2rz29SAapI6kHLw5l35Agl3/plsk8
+uczukKu0IMntTZEeqs6cmWMHC0jSMX6Hb+lC/fg9na0v0I8RMTsGPJnI/IaKTEHS
+meJTQV5KbrZKU5F4lnyXkFLHbHWmJPkK4SgTVVpmqzI1aaziHvMxH/PvzCN63Slz
+R5V5xJqhYr10zFqxYp18zDdCxfdRyXecPlBqRr8T5jDMTkyRbfwrMuVeZ8OolXgk
+uPeKnKR30GU2jwbJLBrmUO9xQwkU9gEHRfXWodJi1CnNSqNZWtepiYQaF6lpB8uI
+Q3qy+aBgs+AC1oEXFofgWPnf/l8AAAAASUVORK5CYII="/>
+</mask>
+<rect x="0" y="0" width="83" height="83" transform="matrix(.0120399999,0,0,-.0120399999,.04816,.98728)" mask="url(#mask_7)"/>
+</g>
+<g id="font_6_0">
+<mask id="mask_9">
+<image id="image_10" width="83" height="83" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAAAAADG2WTcAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAABAUlEQVR4nO3YSw7DIAwEUO5/6XTRNoJix7+ZhVXYlnkClKTYY5jj
+WocdCHF1WAWzrJpOs1YqrroCIdU/1z0ztCff5OjZew8pQNqR1IP3HMq+IQ+5/Eun
+JvOkmq2QWrpEyvEiKQG1nctCmdwJAPmL1He+KxByZUDkApFMCDlJsGVOFMkEkbcF
+XOaNkUwY+dWamNDj/HAkE0i+N3/MYx7zr8wW37ou/x0ss8WdgXFfanNXZNyT29QI
+jPqIUscx6k1KXUyp3xl9Bko/hNK3YfSXKH0wSr+O0lek9D9HfP+u+aGleidfbtU/
+k9GfnwNawvrdSIlfsIy4pYURBw02CyqwHXgBvTpI4lwrXCEAAAAASUVORK5CYII="/>
+</mask>
+<rect x="0" y="0" width="83" height="83" transform="matrix(.0120399999,0,0,-.0120399999,.04816,.98728)" mask="url(#mask_9)"/>
+</g>
+<g id="font_11_0">
+<mask id="mask_12">
+<image id="image_13" width="83" height="83" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAAAAADG2WTcAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAAAxklEQVR4nO3YQQ6AMAhEUe9/aTXGGDWtwDCzINI9b1v4y2K+9fns
+gRCXh6cgyhogwLrEkOoW3WpI9Klh0kYB0kAh8VuFyTmaIGdoihyjSXKEpskBKjAJ
+5BulkC9UYJLIO0ojb6jAJJIXWsSkkidaxCSTB9om1aSTO9pmm2222SZmVvk7fm1W
+2cEkZpXdW2JWubkk92aZW1vSGco0FklfknQwSa+TdEVJ/0TVTxFDLVLSvaOqSwyp
+btGthkQPGwcNFgUnsD2wASsnyF9ozVJOAAAAAElFTkSuQmCC"/>
+</mask>
+<rect x="0" y="0" width="83" height="83" transform="matrix(.0120399999,0,0,-.0120399999,.04816,.98728)" mask="url(#mask_12)"/>
+</g>
+<g id="font_11_4">
+<mask id="mask_14">
+<image id="image_15" width="83" height="83" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAAAAADG2WTcAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAABHUlEQVR4nNXYUQ6FIAxEUfa/ad/vA4XeGdqI/BnbYxFISFsLx9WP
+OEHi9uEp6LIBaLBIlFQsYlUSmSqTMWqQAWqJa9Um5+gGOUO3yGd0k3xCt8kHlCdh
+U6kDooSMzUs2QbBd5iraJZfh3syZKZa5jvfKzDL5JvHKDBKsMnPMpppymeCCIpMZ
+5kgeat7I2OQkPstvmP8zTjK7n3iu2a91stk9bZkt3xx3+aHmSCaYN/JM805um209
+Ksz1tvbI4Kikm7O3XzF31mj+1ibp5ab/DIj6iolRZKLvnmNSlG6kMhOi7AxpaByM
+z9qYAsuUUEq+12NRzYr+UkkfrKRfV9JXLOl/uupS9NCILOl7qyoSJRWLWJVEwupg
+wLrgBI4TfiAXlmfJ7SYtAAAAAElFTkSuQmCC"/>
+</mask>
+<rect x="0" y="0" width="83" height="83" transform="matrix(.0120399999,0,0,-.0120399999,.04816,.98728)" mask="url(#mask_14)"/>
+</g>
+<g id="font_6_5">
+<mask id="mask_16">
+<image id="image_17" width="83" height="83" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAAAAADG2WTcAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAABgElEQVR4nM3XSxKDIBAEUO9/6clKE2X6N5RVYRcy/QSRBI9Dtro3
+HYi4fRiCUxamx6xK5aoViFS/1q6M5uQVp/fevUkBqSOjB4+HpjuE5OabDibnJMzu
+kCjdda4/HHBTJn0bKCyz0bUP3o75QFsyNB8IrknNun3aHuadISUJeYOE2cYNE1Vk
+5ldCuZlZb5qwIDRPi67iwKz3TPx9ah6uyR/0kan3z9PEha2p1GtikcnV0wxJiY5M
+ho5Nfj4amhi1zfUiuya+zNgUF5qYcvTbpvOaMzdxLP+p2zHRQX3LRM0yQ5Sa9ZaZ
+T16Zx3+YfN0vM/4Lh2aNTL6Pzn66k7JhXha7ZrjdS5htlpM/lG+WNhddmAbpmbV0
+WIvKF/h79PWHCd7jijRIPl4O2UAdckGigXpkNHtMNv/bfZ1HwpkaKBBJvK/VIk2j
+cgriLP5Ctmzpdkl48jBEfhhPUSOSolZ9NFS3WD85eaU6uCVFXYAfTWfL2QStrWqx
+TctBwU5BAOvABw1GOyjuWVOiAAAAAElFTkSuQmCC"/>
+</mask>
+<rect x="0" y="0" width="83" height="83" transform="matrix(.0120399999,0,0,-.0120399999,.04816,.98728)" mask="url(#mask_16)"/>
+</g>
+<g id="font_11_2">
+<mask id="mask_18">
+<image id="image_19" width="83" height="83" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAAAAADG2WTcAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAABNElEQVR4nL3YQRICMQhE0dz/0upWi9C/m8EsDTwwU6UTzpHr9b10
+gsXN4SuYsgIMWCRaKhaxaolMtUmNBqRAI7FXY/KODsgbOiJrdEhW6JgsUBjsmI9U
+h3HeyZOwSuzUAUlQmwRoYKqchFSNArL4bGjWhbq0vuDvPmtUmLDWyCSP9rIVm68/
+m7cnqM6zNS8nMzOvhZRpkrrNT0hKPmcS0jTPqtlGPU9aJvvmlklJw8QkNzmJzfO8
+6ZDQtEhmeiQyTZKYLmmaiAQ/ygFpXP0ZqU2flGZAKjMh25eb0BTRcZvobsTJ/qWW
+/v2USbrNam2Y4hoQkSJrwyy3I1PsJ6ZVMzEDFCRUqLlI2bG5MV9amYOtzOtW5oor
+889UbcUMVeTK3NtVkWipWMSqJRLWBwWbghdYJ7wBjMBKs5ECAecAAAAASUVORK5CYII="/>
+</mask>
+<rect x="0" y="0" width="83" height="83" transform="matrix(.0120399999,0,0,-.0120399999,.04816,.98728)" mask="url(#mask_18)"/>
+</g>
+<g id="font_6_3">
+<mask id="mask_20">
+<image id="image_21" width="83" height="83" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAAAAADG2WTcAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAABeUlEQVR4nM3XSxKDIBAEUO9/abJIJSVhpn9iSpYJ/YRBRI+DtjE3
+HrC463ALpmybjlmW8lUpYKl6X7mnNSets1t7tUgGySPRjYdD6Q4BuXzTtcmcbLNX
+yC6t7ESyvDo55qajuMqKuv5lkAiNSQ11Zt6j8z8uCVBGuuYZEszlEoLZX3cpEhko
+GWZx5qgDdUxyYp7Nmqyet9rk+w7lM1xaeWS2l+GmQbJ3haeYZI3eWlhOdCaYJttI
+XzMQ+4xjjrltMIdKPsvEPZ8zzlvWCD7K1HvpDnOFN5nKTvJN7eh0TeVEIrewi467
+zM2TH8l5dEL/bqK3Os8c2GyTqJ6fnzebky2aaCONzETkicJm/aqIp94NtApzUjWL
+TwRqCujaCHmAVTTJnzpZZkEuiIkqpDf7SqwEVCNBrAE0JS7WcZCgIK5dn4INLlyG
+sjnuJcFpQUVW6uRdh3dxyQ3X9TvTezHoST99jU5VAG3udDmLoLL5NbZoPkjYFGxg
+HngBFi2xo1Q5pE4AAAAASUVORK5CYII="/>
+</mask>
+<rect x="0" y="0" width="83" height="83" transform="matrix(.0120399999,0,0,-.0120399999,.04816,.98728)" mask="url(#mask_20)"/>
+</g>
+</defs>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,1.8496399,12.014919)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,12.709419,12.014919)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,23.569199,12.014919)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,34.428979,12.014919)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,45.288759,12.014919)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,56.148546,12.014919)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,67.008319,12.014919)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,1.8496399,22.884139)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963098,0,0,-9.962799,12.709419,22.884139)"/>
+<use data-text="&#xfffd;" xlink:href="#font_6_1" transform="matrix(9.963098,0,0,-9.962799,12.719185,22.884139)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963098,0,0,-9.962799,23.587723,22.884139)"/>
+<use data-text="&#xfffd;" xlink:href="#font_6_0" transform="matrix(9.963098,0,0,-9.962799,23.587723,22.884139)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963098,0,0,-9.962799,34.45626,22.884139)"/>
+<use data-text="&#xfffd;" xlink:href="#font_11_0" transform="matrix(9.963098,0,0,-9.962799,34.45626,22.884139)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963098,0,0,-9.962799,45.325807,22.884139)"/>
+<use data-text="&#xfffd;" xlink:href="#font_11_4" transform="matrix(9.963098,0,0,-9.962799,45.325807,22.884139)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963098,0,0,-9.962799,56.19435,22.884139)"/>
+<use data-text="&#xfffd;" xlink:href="#font_11_0" transform="matrix(9.963098,0,0,-9.962799,56.19435,22.884139)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,67.06288,22.884139)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,1.8496323,33.752355)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963098,0,0,-9.962799,12.709404,33.752355)"/>
+<use data-text="&#xfffd;" xlink:href="#font_6_0" transform="matrix(9.963098,0,0,-9.962799,12.719177,33.752355)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963098,0,0,-9.962799,23.587723,33.752355)"/>
+<use data-text="&#xfffd;" xlink:href="#font_11_0" transform="matrix(9.963098,0,0,-9.962799,23.587723,33.752355)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963098,0,0,-9.962799,34.45626,33.752355)"/>
+<use data-text="&#xfffd;" xlink:href="#font_6_0" transform="matrix(9.963098,0,0,-9.962799,34.45626,33.752355)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963098,0,0,-9.962799,45.325807,33.752355)"/>
+<use data-text="&#xfffd;" xlink:href="#font_6_0" transform="matrix(9.963098,0,0,-9.962799,45.325807,33.752355)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963098,0,0,-9.962799,56.19435,33.752355)"/>
+<use data-text="&#xfffd;" xlink:href="#font_6_5" transform="matrix(9.963098,0,0,-9.962799,56.19435,33.752355)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,67.06389,33.752355)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,1.8496399,44.620576)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,12.709419,44.620576)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963098,0,0,-9.962799,23.569199,44.620576)"/>
+<use data-text="&#xfffd;" xlink:href="#font_11_2" transform="matrix(9.963098,0,0,-9.962799,23.587723,44.620576)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963098,0,0,-9.962799,34.45626,44.620576)"/>
+<use data-text="&#xfffd;" xlink:href="#font_11_0" transform="matrix(9.963098,0,0,-9.962799,34.45626,44.620576)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963098,0,0,-9.962799,45.325807,44.620576)"/>
+<use data-text="&#xfffd;" xlink:href="#font_11_0" transform="matrix(9.963098,0,0,-9.962799,45.325807,44.620576)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963098,0,0,-9.962799,56.19435,44.620576)"/>
+<use data-text="&#xfffd;" xlink:href="#font_6_0" transform="matrix(9.963098,0,0,-9.962799,56.19435,44.620576)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,67.06389,44.620576)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,1.8496399,55.48979)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,12.709419,55.48979)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963098,0,0,-9.962799,23.569199,55.48979)"/>
+<use data-text="&#xfffd;" xlink:href="#font_11_0" transform="matrix(9.963098,0,0,-9.962799,23.587723,55.48979)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963098,0,0,-9.962799,34.45626,55.48979)"/>
+<use data-text="&#xfffd;" xlink:href="#font_6_0" transform="matrix(9.963098,0,0,-9.962799,34.45626,55.48979)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963098,0,0,-9.962799,45.325807,55.48979)"/>
+<use data-text="&#xfffd;" xlink:href="#font_6_3" transform="matrix(9.963098,0,0,-9.962799,45.325807,55.48979)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,56.19435,55.48979)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,67.05412,55.48979)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,1.8496399,66.35801)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,12.709419,66.35801)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,23.569199,66.35801)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,34.428979,66.35801)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,45.288759,66.35801)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,56.148546,66.35801)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.962799,67.008319,66.35801)"/>
+</svg>
