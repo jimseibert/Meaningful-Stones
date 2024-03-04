@@ -10,13 +10,17 @@
       To begin black places one stone on any intersection on a grid.
       Players then alternate playing one stone each on any intersection of the grid.  
       The grid is usually 19 <times/> 19, but the game can be played 
-      on 9 <times/> 9 or 13 <times/> 13 boards as well.  </li>
+      on boards of other sizes.  Boards of 9 <times/> 9 or 13 <times/> 13 are 
+      also common for beginners.  </li>
 
     <li>  Rule 2:  Surround your opponent's stones to capture them.  Captured stones are 
       removed from the board and kept by the capturing player.  </li>
 
-    <li>  Rule 3:  The player whose stones surround the most territory 
-      in the end wins the game.  </li>
+    <li>  Rule 3:  The player with the most territory plus captures wins the game.
+      The game ends when both players decide there are no more moves remaining that will
+      increase their territory or reduce their opponent's territory, capture opponent's 
+      stones or protect their own stones from capture.  Territory is then counted as 
+      the number of open intersections surrounded by one player's stones.  </li>
 
     <li>  Rule 4:  Placing a stone that results in self-capture is not allowed.  </li>
     
