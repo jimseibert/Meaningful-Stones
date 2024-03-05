@@ -11,7 +11,7 @@
       Players then alternate playing one stone each on any intersection of the grid.  
       The grid is usually 19 <times/> 19, but the game can be played 
       on boards of other sizes.  Boards of 9 <times/> 9 or 13 <times/> 13 are 
-      also common for beginners.  </li>
+      common for beginners.  </li>
 
     <li>  Rule 2:  Surround your opponent's stones to capture them.  Captured stones are 
       removed from the board and kept by the capturing player.  </li>
@@ -49,7 +49,7 @@
       are connected and form a single <em>group</em>.  In the following figure, how
       many black groups are there?  How many white groups?
 
-      <figure  xml:id="count-groups">
+      
         <image  width="50%">
             <description>Three black groups and two white groups.</description>
             <latex-image>
@@ -59,7 +59,7 @@
               \showgoban
             </latex-image>
         </image>
-      </figure>
+      
     </p>
   </statement>
   <answer>
@@ -68,7 +68,7 @@
       and one marked with circles) and two white groups (one marked with crosses and 
       the other with unmarked stones).
   
-      <figure  xml:id="count-groups-sol">
+      
        <image  width="50%">
            <description>Three black groups and two white groups, with the groups marked.</description>
            <latex-image>
@@ -81,7 +81,7 @@
              \showgoban
            </latex-image>
        </image>
-     </figure>
+     
     </p>
     
   </answer>
@@ -130,8 +130,174 @@
   </solution>
 </example>
 
+<example>
+  <title>Locations on the Board</title>
+  <statement>
+    <p>
+      In order to talk about the location of stones on the board, it is helpful to have 
+      a notation for the intersections.  To do this we number the rows from bottom to 
+      top, and we use letters (starting with A and skipping I) across the bottom.  
+
+      <image  width="70%">
+        <description>A 19 by 19 board with rows and columns labeled.</description>
+        <latex-image>
+          \begin{tikzpicture}[scale=.8]
 
 
+\draw[step=1cm] (1,1) grid (19,19);
+
+\draw[very thick] (1,1) -- (19,1) (1,19) --(19,19)  (19,1) -- (19,19)  (1,1) -- (1,19);
+
+
+\fill (10,10) circle (.1cm);
+\fill (4,4) circle (.1cm);
+\fill (4, 10) circle (.1cm);
+\fill (4, 16) circle (.1cm);
+\fill (10, 4) circle (.1cm);
+\fill (10,16) circle (.1cm);
+\fill (16, 4) circle (.1cm);
+\fill (16, 10) circle (.1cm);
+\fill (16, 16) circle (.1cm);
+
+\draw (1, .5) node{A};
+\draw (2, .5) node{B};
+\draw (3, .5) node{C};
+\draw (4, .5) node{D};
+\draw (5, .5) node{E};
+\draw (6, .5) node{F};
+\draw (7, .5) node{G};
+\draw (8, .5) node{H};
+\draw (9, .5) node{J};
+\draw (10, .5) node{K};
+\draw (11,.5) node{L};
+\draw (12,.5) node{M};
+\draw (13,.5) node{N};
+\draw (14,.5) node{O};
+\draw (15,.5) node{P};
+\draw (16,.5) node{Q};
+\draw (17,.5) node{R};
+\draw (18,.5) node{S};
+\draw (19,.5) node{T};
+
+\draw (.5, 1) node{1};
+\draw (.5, 2) node{2};
+\draw (.5, 3) node{3};
+\draw (.5, 4) node{4};
+\draw (.5, 5) node{5};
+\draw (.5, 6) node{6};
+\draw (.5, 7) node{7};
+\draw (.5, 8) node{8};
+\draw (.5, 9) node{9};
+\draw (.5, 10) node{10};
+\draw (.5, 11) node{11};
+\draw (.5, 12) node{12};
+\draw (.5, 13) node{13};
+\draw (.5, 14) node{14};
+\draw (.5, 15) node{15};
+\draw (.5, 16) node{16};
+\draw (.5, 17) node{17};
+\draw (.5, 18) node{18};
+\draw (.5, 19) node{19};
+
+
+\fill[white] (4, 8) circle (.45cm);
+\draw (4,8) circle (.45cm);
+
+\fill[black] (12,17) circle (.45cm);
+
+\end{tikzpicture}
+        </latex-image>
+    </image>
+
+    The nine small dots on the board are called <em>star points</em>.  <idx>star points</idx>
+    They are simply there as reference points.  
+    We reference intersections by listing the letter first followed by the number.
+    For example, the white stone is at the D8 point.  The black stone is at the M17 point. 
+    The center star point, at K10, is sometimes referred to by its Japanese
+    name <em>tengen</em>. <idx>tengen</idx>  The corner star points are called 4-4 points (four
+    lines from the two nearest sides), but if we want to name a specific 4-4 point we 
+    can use the label D4, D16, Q4, or Q16.
+    </p>
+  </statement>
+  
+  
+</example>
+
+<example>
+  <title>Counting the Score</title>
+  <statement>
+    <p>
+      Here is an example of a gmae that has finished on a 7 <times/> 7 board. 
+
+        <image  width="50%">
+            <description>A completed 7x7 game.</description>
+            <latex-image>
+              \cleargoban
+              \gobansize{7}
+              \black{d1,e1,g1,e2,g2,f3,d3,d4,e4,f4,g4,d5,c4,a5,b5,d6,d7}
+              \white{a1,c1,a2,c2,d2,b3,c3,a4,b4,e5,f5,g5,e6,g6,e7,f7}
+              \showgoban
+            </latex-image>
+        </image>
+
+      Why is the game completed?  Neither side has any meaningful moves remaining.
+      (Meaningful moves either increase your territory or reduce your opponent's territory, 
+      threaten to capture stones or protect your stones from being captured.)
+      You might ask, "Why doesn't black play at B1?"  Well, white will immediately
+      play at B2, capturing the black stone.  The end result is that white's territory
+      is reduced by one since they placed an extra stone inside their own territory, but 
+      they increase their captures by one, resulting in no change to their overal score
+      (territory plus captures).  In general, there is no benefit to placing stones 
+      in your opponent's territory unless you have an opportunity to capture some
+      stones.      
+    </p>
+
+    <p>  Suppose that white
+      has captured 4 black stones and black has captured 3 white stones.  What is 
+      the final score of the game?  
+    </p>
+  </statement>
+
+    <answer>
+      <p>
+        Black has 14 points (11 points of territory and 3 captures), while white has 
+        9 points (five points of territory and four captures).  Black wins by five
+        points.
+      </p>
+    </answer>
+
+    <solution>
+      <p>
+        In online games, the computer will calculate the score for you, of course.  
+        For in-person games, counting the score by hand is done by first filling your
+        opponent's territory with your captures and then counting the remaining territory.
+
+        In this example, using captured stones to fill territory might look like 
+        the following.
+
+        <image  width="50%">
+          <description>A completed 7x7 game, with territory filled by captures.</description>
+          <latex-image>
+            \cleargoban
+            \gobansize{7}
+            \black{d1,e1,g1,e2,g2,f3,d3,d4,e4,f4,g4,d5,c4,a5,b5,d6,d7,e3,f1,f2,g3}
+            \white{a1,c1,a2,c2,d2,b3,c3,a4,b4,e5,f5,g5,e6,g6,e7,f7,a3,b1,b2}
+            \showgoban
+          </latex-image>
+      </image>
+
+      After the captures have been placed, black now has 7 points of territory and 
+      white has two.  The final scores have changed but the difference is the same.
+      Black still wins by five.
+
+      </p>
+    </solution>
+      
+
+
+
+  
+</example>
 
 
 
