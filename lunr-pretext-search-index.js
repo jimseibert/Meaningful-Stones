@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Chapter",
   "number": "1",
   "title": "What is Go?",
-  "body": " What is Go?   Go is a game.  Go is the oldest game in the world, with evidence of it being played for thousands of years in China, where it is called Weichi - the surrounding game. The game reached Korea in (about) the 5th century CE, where it is called Baduk. The game reached Japan in (about) the 7th century, where it is called Go (or Igo). The game only reached the western world in the 19th century. From its earliest incarnations, Go was considered a worthy activity for aristocrats and scholars.  Go is a game of complete information, and the games are decided by the local tactics and global strategies of the players.    "
+  "body": " What is Go?   Go is a game.  Go is the oldest game in the world, with evidence of it being played for thousands of years in China.  weichi  baduk  In China the game is called Weichi - the surrounding game. The game reached Korea in (about) the 5th century CE, where it is called Baduk. The game reached Japan in (about) the 7th century, where it is called Go (or Igo). The game only reached the western world in the 19th century.  Go is a game of complete information. The games are decided by the local tactics and global strategies of the players. There is no randomness.  From its earliest incarnations, Go was considered a worthy activity for aristocrats, scholars, and military leaders.  Go is a simple game with few rules.  Go is a complex game with more possible outcomes than there are atoms in the known universe!    "
 },
 {
   "id": "sec-rules-of-the-game",
