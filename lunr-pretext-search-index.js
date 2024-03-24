@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Rules of the Game of Go",
-  "body": " Rules of the Game of Go  There are very few rules in the game of go.  Rule 1: One player has white stones and the other player has black stones. To begin black places one stone on any intersection on a grid. Players then alternate playing one stone each on any intersection of the grid. The grid is usually 19 19, but the game can be played on boards of other sizes. Boards of 9 9 or 13 13 are also common for beginners.  Rule 2: Surround your opponent's stones to capture them. Captured stones are removed from the board and kept by the capturing player.  Rule 3: The player with the most territory plus captures wins the game. The game ends when both players decide there are no more moves remaining that will increase their territory or reduce their opponent's territory, capture opponent's stones or protect their own stones from capture. Territory is then counted as the number of open intersections surrounded by one player's stones.  Rule 4: Placing a stone that results in self-capture is not allowed.  Rule 5: Repetition of an identical board position is not allowed (the ko rule).  The video below introduces these rules in more detail. Watch the video and work through the examples to test your understanding.  Michael Redmond The 5 Rules of Go      Goups of stones   Recall that stones that are next to each other along horizontal or vertical lines (but NOT diagonally) are connected and form a single group . In the following figure, how many black groups are there? How many white groups?   Three black groups and two white groups.        There are three black groups (one group marked with triangles, one marked with squares, and one marked with circles) and two white groups (one marked with crosses and the other with unmarked stones).   Three black groups and two white groups, with the groups marked.         Counting liberties   Remember that spaces next to a group of stones (along horizontal or vertical lines) are called the liberties of the group. There are two groups in the figure below. How many liberties does each have?  One black group and one white group of stones.       The black group has seven liberties, and the white group has ten.    Here the liberties are marked.  One black group and one white group of stones, each with their liberties marked.        Exercises   How many groups are depicted in this board? How many liberties does each group have? How many unoccupied liberties does each group have?  Two black groups and three white groups.      Remember that diagonal stones are NOT connected!   There are two black groups and three white groups, numbered below.  Two black groups and three white groups, numbered.     Group 1 has 3 stones, 7 total liberties, and 5 unoccupied liberties.  Group 2 has 5 stones, 10 total liberties, and 3 unoccupied liberties.  Group 3 has 2 stones, 6 total liberties, and 3 unoccupied liberties.  Group 4 has 3 stones, 8 total liberties, and 4 unoccupied liberties.  Group 5 has 4 stones, 9 total liberties, and 3 unoccupied liberties.      "
+  "body": " Rules of the Game of Go  There are very few rules in the game of go.  Rule 1: One player has white stones and the other player has black stones. To begin black places one stone on any intersection on a grid. Players then alternate playing one stone each on any intersection of the grid. The grid is usually 19 19, but the game can be played on boards of other sizes. Boards of 9 9 or 13 13 are common for beginners.  Rule 2: Surround your opponent's stones to capture them. Captured stones are removed from the board and kept by the capturing player.  Rule 3: The player with the most territory plus captures wins the game. The game ends when both players decide there are no more moves remaining that will increase their territory or reduce their opponent's territory, capture opponent's stones or protect their own stones from capture. Territory is then counted as the number of open intersections surrounded by one player's stones.  Rule 4: Placing a stone that results in self-capture is not allowed.  Rule 5: Repetition of an identical board position is not allowed (the ko rule).  The video below introduces these rules in more detail. Watch the video and work through the examples to test your understanding.  Michael Redmond The 5 Rules of Go      Goups of stones   Recall that stones that are next to each other along horizontal or vertical lines (but NOT diagonally) are connected and form a single group . In the following figure, how many black groups are there? How many white groups?  Three black groups and two white groups.       There are three black groups (one group marked with triangles, one marked with squares, and one marked with circles) and two white groups (one marked with crosses and the other with unmarked stones).  Three black groups and two white groups, with the groups marked.        Counting liberties   liberties  Remember that spaces next to a group of stones (along horizontal or vertical lines) are called the liberties of the group. There are two groups in the figure below. How many liberties does each have?  One black group and one white group of stones.       The black group has seven liberties, and the white group has ten.    Here the liberties are marked.  One black group and one white group of stones, each with their liberties marked.        Locations on the Board   In order to talk about the location of stones on the board, it is helpful to have a notation for the intersections. To do this we number the rows from bottom to top, and we use letters (starting with A and skipping I) across the bottom.  A 19 by 19 board with rows and columns labeled.   The nine small dots on the board are called star points . star points They are simply there as reference points. We reference intersections by listing the letter first followed by the number. For example, the white stone is at the D8 point. The black stone is at the M17 point. The center star point, at K10, is sometimes referred to by its Japanese name tengen . tengen The corner star points are called 4-4 points (four lines from the two nearest sides), but if we want to name a specific 4-4 point we can use the label D4, D16, Q4, or Q16.     Legal and Illegal Moves   Consider white's move in this corner situation. White can capture the black stone in the corner with a move at T2.  Black R1, R2, S3, T1; White S1, S2   The result is  Black R1, R2, S3; White S1, S2, T2   Now black cannot play in the corner at T1, as that would be an illegal self-capture. Instead black plays at T3.  Black R1, R2, S3, T3; White S1, S2, T2   Now white cannot play at T1 as that would result in the self-capture of the four white stones. Let's say white plays at R3.  Black R1, R2, S3, T3; White S1, S2, T2, R3   Can black now play in the corner at T1? Yes! Enemy captures happen before self-captures. If black was not capturing stones, the move would be illegal, but since black is capturing stones, it is a legal move.  Black R1, R2, S3, T3, T1; White R3        Counting the Score   Here is an example of a game that has finished on a 7 7 board.  A completed 7x7 game.   Why is the game completed? Neither side has any meaningful moves remaining. (Meaningful moves either increase your territory or reduce your opponent's territory, threaten to capture stones or protect your stones from being captured.) You might ask, \"Why doesn't black play at B1?\" Well, white will immediately play at B2, capturing the black stone. The end result is that white's territory is reduced by one since they placed an extra stone inside their own territory, but they increase their captures by one, resulting in no change to their overal score (territory plus captures). In general, there is no benefit to placing stones in your opponent's territory unless you have an opportunity to capture some stones.  Suppose that white has captured 4 black stones and black has captured 3 white stones. What is the final score of the game?    Black has 14 points (11 points of territory and 3 captures), while white has 9 points (five points of territory and four captures). Black wins by five points.    In online games, the computer will calculate the score for you, of course. For in-person games, counting the score by hand is done by first filling your opponent's territory with your captures and then counting the remaining territory. In this example, using captured stones to fill territory might look like the following.  A completed 7x7 game, with territory filled by captures.   After the captures have been placed, black now has 7 points of territory and white has two. The final scores have changed but the difference is the same. Black still wins by five.     The Ko Rule and Ko Fights    ko  ko fight  ko threat Suppose that white has just captured a black stone by placing the marked stone below.  An simple example of a ko.   Black cannot immediately recapture with a move at D4 (the star point) because of the ko rule.  Black must play somewhere else on the board. Suppose black plays at F3, extending their weak stone. White now has a choice. White can play elsewhere on the board, or they can play at D4 ending the \"ko fight.\"  An simple example of a ko fight ended.   Here white has ended the ko. White is left with an inefficient clump of stones, but they have lots of liberties and are not in immediate danger.  Here's a more complicated example of a ko. As before, white has just taken the stone at D4 to start the ko. This time black has a better move, the marked stone at G3. This kind of move is called a \"ko threat.\" It threatens to take something more valuable than the ko, forcing your opponent to respond away from the ko and allowing you to retake the ko.  White starts a ko. Black has a ko threat.   In this case black is threatening the four white stones. White has to choose between saving the four white stones and ending the ko. If white saves the four stones, then black can re-take the ko with a stone at D4.  White responds to the ko threat.   Now it's white's turn to look for a ko threat somewhere else on the board. If they can force black to respond elsewhere, then white can re-take the ko. If they can't find a ko threat, then black can play at D3 ending the ko. This process of taking turns looking for ko threats and retaking the ko is called a ko fight. It is a natural consequence of the ko rule.     Exercises   How many groups are depicted in this board? How many liberties does each group have? How many unoccupied liberties does each group have?  Two black groups and three white groups.      Remember that diagonal stones are NOT connected!   There are two black groups and three white groups, numbered below.  Two black groups and three white groups, numbered.     Group 1 has 3 stones, 7 total liberties, and 5 unoccupied liberties.  Group 2 has 5 stones, 10 total liberties, and 3 unoccupied liberties.  Group 3 has 2 stones, 6 total liberties, and 3 unoccupied liberties.  Group 4 has 3 stones, 8 total liberties, and 4 unoccupied liberties.  Group 5 has 4 stones, 9 total liberties, and 3 unoccupied liberties.      "
 },
 {
   "id": "sec-rules-of-the-game-2-2",
@@ -43,16 +43,52 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "2.1.2",
   "title": "Goups of stones.",
-  "body": " Goups of stones   Recall that stones that are next to each other along horizontal or vertical lines (but NOT diagonally) are connected and form a single group . In the following figure, how many black groups are there? How many white groups?   Three black groups and two white groups.        There are three black groups (one group marked with triangles, one marked with squares, and one marked with circles) and two white groups (one marked with crosses and the other with unmarked stones).   Three black groups and two white groups, with the groups marked.       "
+  "body": " Goups of stones   Recall that stones that are next to each other along horizontal or vertical lines (but NOT diagonally) are connected and form a single group . In the following figure, how many black groups are there? How many white groups?  Three black groups and two white groups.       There are three black groups (one group marked with triangles, one marked with squares, and one marked with circles) and two white groups (one marked with crosses and the other with unmarked stones).  Three black groups and two white groups, with the groups marked.      "
 },
 {
   "id": "sec-rules-of-the-game-4",
   "level": "2",
   "url": "sec-rules-of-the-game.html#sec-rules-of-the-game-4",
   "type": "Example",
-  "number": "2.1.5",
+  "number": "2.1.3",
   "title": "Counting liberties.",
-  "body": " Counting liberties   Remember that spaces next to a group of stones (along horizontal or vertical lines) are called the liberties of the group. There are two groups in the figure below. How many liberties does each have?  One black group and one white group of stones.       The black group has seven liberties, and the white group has ten.    Here the liberties are marked.  One black group and one white group of stones, each with their liberties marked.      "
+  "body": " Counting liberties   liberties  Remember that spaces next to a group of stones (along horizontal or vertical lines) are called the liberties of the group. There are two groups in the figure below. How many liberties does each have?  One black group and one white group of stones.       The black group has seven liberties, and the white group has ten.    Here the liberties are marked.  One black group and one white group of stones, each with their liberties marked.      "
+},
+{
+  "id": "sec-rules-of-the-game-5",
+  "level": "2",
+  "url": "sec-rules-of-the-game.html#sec-rules-of-the-game-5",
+  "type": "Example",
+  "number": "2.1.4",
+  "title": "Locations on the Board.",
+  "body": " Locations on the Board   In order to talk about the location of stones on the board, it is helpful to have a notation for the intersections. To do this we number the rows from bottom to top, and we use letters (starting with A and skipping I) across the bottom.  A 19 by 19 board with rows and columns labeled.   The nine small dots on the board are called star points . star points They are simply there as reference points. We reference intersections by listing the letter first followed by the number. For example, the white stone is at the D8 point. The black stone is at the M17 point. The center star point, at K10, is sometimes referred to by its Japanese name tengen . tengen The corner star points are called 4-4 points (four lines from the two nearest sides), but if we want to name a specific 4-4 point we can use the label D4, D16, Q4, or Q16.   "
+},
+{
+  "id": "sec-rules-of-the-game-6",
+  "level": "2",
+  "url": "sec-rules-of-the-game.html#sec-rules-of-the-game-6",
+  "type": "Example",
+  "number": "2.1.5",
+  "title": "Legal and Illegal Moves.",
+  "body": " Legal and Illegal Moves   Consider white's move in this corner situation. White can capture the black stone in the corner with a move at T2.  Black R1, R2, S3, T1; White S1, S2   The result is  Black R1, R2, S3; White S1, S2, T2   Now black cannot play in the corner at T1, as that would be an illegal self-capture. Instead black plays at T3.  Black R1, R2, S3, T3; White S1, S2, T2   Now white cannot play at T1 as that would result in the self-capture of the four white stones. Let's say white plays at R3.  Black R1, R2, S3, T3; White S1, S2, T2, R3   Can black now play in the corner at T1? Yes! Enemy captures happen before self-captures. If black was not capturing stones, the move would be illegal, but since black is capturing stones, it is a legal move.  Black R1, R2, S3, T3, T1; White R3      "
+},
+{
+  "id": "sec-rules-of-the-game-7",
+  "level": "2",
+  "url": "sec-rules-of-the-game.html#sec-rules-of-the-game-7",
+  "type": "Example",
+  "number": "2.1.6",
+  "title": "Counting the Score.",
+  "body": " Counting the Score   Here is an example of a game that has finished on a 7 7 board.  A completed 7x7 game.   Why is the game completed? Neither side has any meaningful moves remaining. (Meaningful moves either increase your territory or reduce your opponent's territory, threaten to capture stones or protect your stones from being captured.) You might ask, \"Why doesn't black play at B1?\" Well, white will immediately play at B2, capturing the black stone. The end result is that white's territory is reduced by one since they placed an extra stone inside their own territory, but they increase their captures by one, resulting in no change to their overal score (territory plus captures). In general, there is no benefit to placing stones in your opponent's territory unless you have an opportunity to capture some stones.  Suppose that white has captured 4 black stones and black has captured 3 white stones. What is the final score of the game?    Black has 14 points (11 points of territory and 3 captures), while white has 9 points (five points of territory and four captures). Black wins by five points.    In online games, the computer will calculate the score for you, of course. For in-person games, counting the score by hand is done by first filling your opponent's territory with your captures and then counting the remaining territory. In this example, using captured stones to fill territory might look like the following.  A completed 7x7 game, with territory filled by captures.   After the captures have been placed, black now has 7 points of territory and white has two. The final scores have changed but the difference is the same. Black still wins by five.   "
+},
+{
+  "id": "sec-rules-of-the-game-8",
+  "level": "2",
+  "url": "sec-rules-of-the-game.html#sec-rules-of-the-game-8",
+  "type": "Example",
+  "number": "2.1.7",
+  "title": "The Ko Rule and Ko Fights.",
+  "body": " The Ko Rule and Ko Fights    ko  ko fight  ko threat Suppose that white has just captured a black stone by placing the marked stone below.  An simple example of a ko.   Black cannot immediately recapture with a move at D4 (the star point) because of the ko rule.  Black must play somewhere else on the board. Suppose black plays at F3, extending their weak stone. White now has a choice. White can play elsewhere on the board, or they can play at D4 ending the \"ko fight.\"  An simple example of a ko fight ended.   Here white has ended the ko. White is left with an inefficient clump of stones, but they have lots of liberties and are not in immediate danger.  Here's a more complicated example of a ko. As before, white has just taken the stone at D4 to start the ko. This time black has a better move, the marked stone at G3. This kind of move is called a \"ko threat.\" It threatens to take something more valuable than the ko, forcing your opponent to respond away from the ko and allowing you to retake the ko.  White starts a ko. Black has a ko threat.   In this case black is threatening the four white stones. White has to choose between saving the four white stones and ending the ko. If white saves the four stones, then black can re-take the ko with a stone at D4.  White responds to the ko threat.   Now it's white's turn to look for a ko threat somewhere else on the board. If they can force black to respond elsewhere, then white can re-take the ko. If they can't find a ko threat, then black can play at D3 ending the ko. This process of taking turns looking for ko threats and retaking the ko is called a ko fight. It is a natural consequence of the ko rule.   "
 },
 {
   "id": "exercises-rules-2",
@@ -70,41 +106,32 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Capturing Stones",
-  "body": " Capturing Stones  Consider this lone stone in the middle of the board.   Single black stone in the middle of the board.    There are four points adjacent to this stone, following lines horizontally or vertically. These are called the liberties of the stone. If white manages to occupy all of this stone's liberties, then white will capture the stone and take it off the board.   Single black stone, liberties marked.    On the edge of the board or in the corner stones have fewer liberties.   Black stones on an edge and on a corner, liberties marked.    When stones of the same color are on adjacent intersections (horizontally or vertically, not diagonally ) we say they are connected. A connected group of stones shares their liberties. For example, in the group of two stones in the middle of the board share six liberties, and the group of two stones along the edge share four.   Two adjacent stones, edge and middle, liberties marked.       Two adjacent stones, edge and middle, liberties marked.    Can I reference ?  Nick Sibicky Pro Review Ke Jie     "
+  "body": " Capturing Stones  atari  A group of stones is captured when all of its liberties are taken by their opponent's stones. When a group has only one liberty remaining, the group is one move away from being captured and we say the group is in atari . (If you are as old as me, you might be familiar with Atari as the name of a video game company. Atari was a term in go first!) We also use the word atari as a verb in statements like, \"I will atari your stones with the following move.\" When stones are in atari we have to decide whether we want to try to save them from capture. In order to save a group in atari we must play to give the group more liberties. We can do that by capturing some of the stones taking our liberties, or (possibly) by extending our group at the point of its last liberty.   Saving Stones in Atari   On the following board, assume it is white's move and notice that the two white stones are in atari. Where can white play to save their stones?  White D1, D2; Black C1, C2, B3, B4, E1, E2.       Playing at D3 gives white's stones three liberties and a chance to escape.  White D1, D2, D3; Black C1, C2, B3, B4, E1, E2.        Stones in Atari   Consider the following situation. Which group of stones is in atari?  White A2, B2, B3, B4, C5, C6, B6, A6; Black B1, C1, C2, C3, C4, B5, A4, A5.   The black group on the left is the only group in atari. (The white group on the bottom has two liberties.) Notice that there is nothing black can do to gain more liberties! Black can't place a stone at A3 since that would be a self-capture, and black cannot capture stones in one move. Suppose black plays at A1. Now which stones are in atari?  White A2, B2, B3, B4, C5, C6, B6, A6; Black B1, C1, C2, C3, C4, B5, A4, A5, A1.   Now the four white stones at the bottom and the three black stones are both in atari, but it's white's turn. Can white play at A3? Yes! White A3 captures the three black stones!  White A2, B2, B3, B4, C5, C6, B6, A6, A3; Black B1, C1, C2, C3, C4, A1.       When stones of the same color are on adjacent intersections (horizontally or vertically, not diagonally ) we say they are connected. A connected group of stones shares their liberties. For example, in the group of two stones in the middle of the board share six liberties, and the group of two stones along the edge share four.   Two adjacent stones, edge and middle, liberties marked.       Two adjacent stones, edge and middle, liberties marked.    Can I reference ?  "
 },
 {
-  "id": "lone-stone",
+  "id": "sec-capturing-stones-4",
   "level": "2",
-  "url": "sec-capturing-stones.html#lone-stone",
-  "type": "Figure",
+  "url": "sec-capturing-stones.html#sec-capturing-stones-4",
+  "type": "Example",
   "number": "2.2.1",
-  "title": "",
-  "body": "  Single black stone in the middle of the board.    "
+  "title": "Saving Stones in Atari.",
+  "body": " Saving Stones in Atari   On the following board, assume it is white's move and notice that the two white stones are in atari. Where can white play to save their stones?  White D1, D2; Black C1, C2, B3, B4, E1, E2.       Playing at D3 gives white's stones three liberties and a chance to escape.  White D1, D2, D3; Black C1, C2, B3, B4, E1, E2.      "
 },
 {
-  "id": "lone-stone-liberties",
+  "id": "sec-capturing-stones-5",
   "level": "2",
-  "url": "sec-capturing-stones.html#lone-stone-liberties",
-  "type": "Figure",
+  "url": "sec-capturing-stones.html#sec-capturing-stones-5",
+  "type": "Example",
   "number": "2.2.2",
-  "title": "",
-  "body": "  Single black stone, liberties marked.    "
-},
-{
-  "id": "edge-and-corner-liberties",
-  "level": "2",
-  "url": "sec-capturing-stones.html#edge-and-corner-liberties",
-  "type": "Figure",
-  "number": "2.2.3",
-  "title": "",
-  "body": "  Black stones on an edge and on a corner, liberties marked.    "
+  "title": "Stones in Atari.",
+  "body": " Stones in Atari   Consider the following situation. Which group of stones is in atari?  White A2, B2, B3, B4, C5, C6, B6, A6; Black B1, C1, C2, C3, C4, B5, A4, A5.   The black group on the left is the only group in atari. (The white group on the bottom has two liberties.) Notice that there is nothing black can do to gain more liberties! Black can't place a stone at A3 since that would be a self-capture, and black cannot capture stones in one move. Suppose black plays at A1. Now which stones are in atari?  White A2, B2, B3, B4, C5, C6, B6, A6; Black B1, C1, C2, C3, C4, B5, A4, A5, A1.   Now the four white stones at the bottom and the three black stones are both in atari, but it's white's turn. Can white play at A3? Yes! White A3 captures the three black stones!  White A2, B2, B3, B4, C5, C6, B6, A6, A3; Black B1, C1, C2, C3, C4, A1.      "
 },
 {
   "id": "group-liberties",
   "level": "2",
   "url": "sec-capturing-stones.html#group-liberties",
   "type": "Figure",
-  "number": "2.2.4",
+  "number": "2.2.3",
   "title": "",
   "body": "  Two adjacent stones, edge and middle, liberties marked.    "
 },
@@ -113,18 +140,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-capturing-stones.html#big-group-liberties",
   "type": "Figure",
-  "number": "2.2.5",
+  "number": "2.2.4",
   "title": "",
   "body": "  Two adjacent stones, edge and middle, liberties marked.    "
-},
-{
-  "id": "sec-capturing-stones-2-10",
-  "level": "2",
-  "url": "sec-capturing-stones.html#sec-capturing-stones-2-10",
-  "type": "Figure",
-  "number": "2.2.6",
-  "title": "",
-  "body": " Nick Sibicky Pro Review Ke Jie   "
 },
 {
   "id": "backmatter-2",
@@ -139,6 +157,15 @@ var ptx_lunr_docs = [
   "id": "backmatter-3",
   "level": "1",
   "url": "backmatter-3.html",
+  "type": "Index",
+  "number": "",
+  "title": "Index",
+  "body": " Index   "
+},
+{
+  "id": "backmatter-4",
+  "level": "1",
+  "url": "backmatter-4.html",
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
