@@ -2,45 +2,114 @@
 
 <section xml:id="sec-capturing-stones" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Capturing Stones</title>
+<idx>atari</idx>
+  <p> A group of stones is captured when all of its liberties are taken by their
+    opponent's stones.  When a group has only one liberty remaining, the group
+    is one move away from being captured and we say the group is in <em>atari</em>. 
+    <fn>(If you are as old as me, you might be familiar with Atari as the name of a 
+    video game company.  Atari was a term in go first!) </fn> 
+    We also use the word
+    atari as a verb in statements like, "I will atari your stones with the following move." 
 
-  <p> Consider this lone stone in the middle of the board. 
+    When stones are in atari we have to decide whether we want to try to save them from capture.  In order to save a group in atari
+    we must play to give the group more liberties.  We can do that by capturing some of the stones taking our liberties, or (possibly) by
+    extending our group at the point of its last liberty.
+  </p>
 
-  <figure xml:id="lone-stone">
-    <image  width="50%">
-        <description>Single black stone in the middle of the board.</description>
-        <latex-image>
-          \black{k10}
-          \showgoban[h8,m12]
-        </latex-image>
-    </image>
-  </figure>
-  
-  There are four points adjacent to this stone, following lines horizontally or vertically.
-  These are called the <em>liberties</em> of the stone.  If white manages to occupy all of 
-  this stone's liberties, then white will capture the stone and take it off the board.
 
-  <figure xml:id="lone-stone-liberties">
-    <image  width="50%">
-        <description>Single black stone, liberties marked.</description>
-        <latex-image>
-          \black{k10}
-          \gobansymbol{k9,k11,j10,l10}{a}
-          \showgoban[h8,m12]
-        </latex-image>
-    </image>
-  </figure>
-On the edge of the board or in the corner stones have fewer liberties.
-<figure xml:id="edge-and-corner-liberties">
-  <image  width="50%">
-      <description>Black stones on an edge and on a corner, liberties marked.</description>
-      <latex-image>
-        \cleargoban
-        \black{a1,f1}
-        \gobansymbol{a2,b1,g1,e1,f2}{a}
-        \showgoban
-      </latex-image>
-  </image>
-</figure>
+    
+    <example>
+      <title>Saving Stones in Atari</title>
+      <statement>
+        <p>
+          On the following board, assume it is white's move and notice that the two white stones are in atari.  Where can white play to save their stones?
+            <image  width="50%">
+                <description>White D1, D2; Black C1, C2, B3, B4, E1, E2.</description>
+                <latex-image>
+                  \cleargoban
+                  \white{d1,d2}
+                  \black{c1,c2,b3,b4,e1,e2}
+                  \showgoban
+                </latex-image>
+            </image>
+
+
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          Playing at D3 gives white's stones three liberties and a chance to escape.
+            <image  width="50%">
+                <description>White D1, D2, D3; Black C1, C2, B3, B4, E1, E2.</description>
+                <latex-image>
+                  \cleargoban
+                  \white{d1,d2,d3}
+                  \black{c1,c2,b3,b4,e1,e2}
+                  \showgoban
+                </latex-image>
+            </image>
+
+        </p>
+      </answer>
+      
+    </example>
+
+
+
+
+
+    <example>
+      <title>Stones in Atari</title>
+      <statement>
+        <p>
+          Consider the following situation.  Which group of stones is in atari?  
+            <image  width="50%">
+                <description>White A2, B2, B3, B4, C5, C6, B6, A6; Black B1, C1, C2, C3, C4, B5, A4, A5.</description>
+                <latex-image>
+                  \cleargoban
+                  \white{a2,b2,b3,b4,c5,c6,b6,a6}
+                  \black{b1,c1,c2,c3,c4,b5,a4,a5}
+                  \showgoban
+                </latex-image>
+              </image>
+          The black group on the left is the only group in atari.  (The white group on the bottom has two liberties.) 
+          Notice that there is nothing black can do to gain more liberties!  Black can't place a stone at A3 since that
+          would be a self-capture, and black cannot capture stones in one move.  
+          
+          Suppose black plays at A1.  Now which stones are in atari?
+            <image  width="50%">
+                <description>White A2, B2, B3, B4, C5, C6, B6, A6; Black B1, C1, C2, C3, C4, B5, A4, A5, A1.</description>
+                <latex-image>
+                  \cleargoban
+                  \white{a2,b2,b3,b4,c5,c6,b6,a6}
+                  \black{b1,c1,c2,c3,c4,b5,a4,a5,a1}
+                  \showgoban
+                </latex-image>
+            </image>
+
+          Now the four white stones at the bottom and the three black stones are both in atari, but it's white's turn.  Can white play at A3?
+          Yes!  White A3 captures the three black stones!
+            <image  width="50%">
+                <description>White A2, B2, B3, B4, C5, C6, B6, A6, A3; Black B1, C1, C2, C3, C4, A1.</description>
+                <latex-image>
+                  \cleargoban
+                  \white{a2,b2,b3,b4,c5,c6,b6,a6,a3}
+                  \black{b1,c1,c2,c3,c4,a1}
+                  \showgoban
+                </latex-image>
+            </image>
+        </p>
+      </statement>
+    </example>
+ 
+ 
+
+
+
+
+
+<p>    
 When stones of the same color are on adjacent intersections (horizontally or vertically, 
 <em>not diagonally</em>) we say they are connected.  A connected group of stones shares 
 their liberties.  For example, in <xref ref="group-liberties" /> the group of two stones in 
@@ -73,10 +142,6 @@ edge share four.
 Can I reference <xref ref="big-group-liberties" />?
 
 
-<figure>
-  <caption>Nick Sibicky <articletitle>Pro Review Ke Jie</articletitle></caption>
-  <video xml:id="Nick-Sibicky-208" youtube="GmQkVwZXx2U" width="60%" start="12" preview="images/hotel-california.jpg" />
-</figure>
 
 </p>
 

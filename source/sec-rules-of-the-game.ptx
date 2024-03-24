@@ -5,7 +5,7 @@
 
   <p> There are very few rules in the game of go.  
 
-  <ol> 
+  <ul> 
     <li>  Rule 1:  One player has white stones and the other player has black stones.  
       To begin black places one stone on any intersection on a grid.
       Players then alternate playing one stone each on any intersection of the grid.  
@@ -27,7 +27,7 @@
     <li>  Rule 5:  Repetition of an identical board position is not allowed 
       (the <em>ko</em> rule). </li>
 
-    </ol>
+    </ul>
 
     The video below introduces these rules in more detail.  Watch the video 
     and work through the examples to test your understanding.
@@ -89,7 +89,7 @@
 
 <example>
   <title>Counting liberties</title>
-  <statement>
+  <statement>  <idx>liberties</idx>
     <p>
       Remember that spaces next to a group of stones (along horizontal or vertical lines)
       are called the <em>liberties</em> of the group.  
@@ -223,11 +223,111 @@
   
 </example>
 
+
+<example>
+  <title>Legal and Illegal Moves</title>
+  <statement>
+    <p>
+      Consider white's move in this corner situation. White can capture the black stone in 
+      the corner with a move at T2.
+
+      <image  width="50%">
+        <description>Black R1, R2, S3, T1; White S1, S2</description>
+        <latex-image>
+          \cleargoban
+          \black{r1,r2,s3,t1}
+          \white{s1,s2}
+          \showgoban
+        </latex-image>
+    </image>
+
+      The result is  
+
+      <image  width="50%">
+        <description>Black R1, R2, S3; White S1, S2, T2</description>
+        <latex-image>
+          \cleargoban
+          \black{r1,r2,s3}
+          \white{s1,s2,t2}
+          \showgoban
+        </latex-image>
+    </image>
+
+      Now black cannot play in the corner at T1, as that would be an illegal self-capture.
+      Instead black plays at T3.
+
+      <image  width="50%">
+        <description>Black R1, R2, S3, T3; White S1, S2, T2</description>
+        <latex-image>
+          \cleargoban
+          \black{r1,r2,s3,t3}
+          \white{s1,s2,t2}
+          \showgoban
+        </latex-image>
+    </image>
+
+    Now white cannot play at T1 as that would result in the self-capture of the four white 
+    stones.  Let's say white plays at R3.
+
+    <image  width="50%">
+      <description>Black R1, R2, S3, T3; White S1, S2, T2, R3</description>
+      <latex-image>
+        \cleargoban
+        \black{r1,r2,s3,t3}
+        \white{s1,s2,t2,r3}
+        \showgoban
+      </latex-image>
+  </image>
+
+  Can black now play in the corner at T1?  Yes!  Enemy captures happen before self-captures.
+  If black was not capturing stones, the move would be illegal, but since black is capturing
+  stones, it is a legal move.
+
+  <image  width="50%">
+    <description>Black R1, R2, S3, T3, T1; White R3</description>
+    <latex-image>
+      \cleargoban
+      \black{r1,r2,s3,t3,t1}
+      \white{r3}
+      \showgoban
+    </latex-image>
+</image>
+
+    </p>
+  </statement>
+  
+</example>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <example>
   <title>Counting the Score</title>
   <statement>
     <p>
-      Here is an example of a gmae that has finished on a 7 <times/> 7 board. 
+      Here is an example of a game that has finished on a 7 <times/> 7 board. 
 
         <image  width="50%">
             <description>A completed 7x7 game.</description>
@@ -298,6 +398,101 @@
 
   
 </example>
+
+
+
+<example>
+  <title>The Ko Rule and Ko Fights</title>
+  <statement>
+    <p>  <idx>ko</idx>  <idx>ko fight</idx> <idx>ko threat</idx>
+      Suppose that white has just captured a black stone by placing the marked stone below. 
+
+        <image  width="50%">
+            <description>An simple example of a ko.</description>
+            <latex-image>
+              \cleargoban
+              \gobansize{19}
+              \black{c2,c3,d2,e3}
+              \white{c4,e4,d5}
+              \white[\igotriangle]{d3}
+              \showgoban
+            </latex-image>
+        </image>
+
+      Black cannot immediately recapture with a move at D4 (the 
+      star point) because of the ko rule.  
+    </p>
+
+    <p>  Black must play somewhere else on the board. Suppose black plays at F3, extending
+      their weak stone.  White now has a choice.  White can play elsewhere on the board,
+      or they can play at D4 ending the "ko fight."
+
+      <image  width="50%">
+        <description>An simple example of a ko fight ended.</description>
+        <latex-image>
+          \cleargoban
+          \gobansize{19}
+          \black{c2,c3,d2,e3,f3}
+          \white{c4,e4,d3,d4,d5}
+          \showgoban
+        </latex-image>
+    </image>
+
+    Here white has ended the ko.  White is left with an inefficient clump of stones, but they 
+    have lots of liberties and are not in immediate danger.
+
+    </p>
+    <p>  
+    Here's a more complicated example of a ko.  As before, white has just taken the 
+    stone at D4 to start the ko.  This time black has a better move, the marked stone at G3.
+    This kind of move is called a "ko threat."  It threatens to take something more
+    valuable than the ko, forcing your opponent to respond away from the ko and allowing
+    you to retake the ko.
+
+    <image  width="50%">
+      <description>White starts a ko.  Black has a ko threat.</description>
+      <latex-image>
+        \cleargoban
+        \gobansize{19}
+        \black{c2,c3,d2,e3,f1,f2,f3,g1,j2,k1,k2}
+        \white{c4,e4,d3,d5,g2,h1,h2,j1,g4,h4}
+        \black[\igotriangle]{g3}
+        \showgoban
+      </latex-image>
+    </image>
+
+    In this case black is threatening the four white stones.  White has to choose between
+    saving the four white stones and ending the ko.  If white saves the four stones, then 
+    black can re-take the ko with a stone at D4.
+    
+    <image  width="50%">
+      <description>White responds to the ko threat.</description>
+      <latex-image>
+        \cleargoban
+        \black{c2,c3,d2,e3,f1,f2,f3,g1,j2,k1,k2,g3,d4}
+        \white{c4,e4,d5,g2,h1,h2,j1,g4,h4,h3}
+        \showgoban
+      </latex-image>
+    </image>
+
+    Now it's white's turn to look for a ko threat somewhere else on the board.  If they 
+    can force black to respond elsewhere, then white can re-take the ko.  If they can't  
+    find a ko threat, then black can play at D3 ending the ko.
+
+    This process of taking turns looking for ko threats and retaking the ko is called a 
+    ko fight.  It is a natural consequence of the ko rule.
+  </p>
+  
+  </statement>
+
+   
+      
+</example>
+
+
+
+
+
 
 
 
