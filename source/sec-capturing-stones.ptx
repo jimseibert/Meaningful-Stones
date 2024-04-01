@@ -23,6 +23,7 @@
       <statement>
         <p>
           On the following board, assume it is white's move and notice that the two white stones are in atari.  Where can white play to save their stones?
+
             <image  width="50%">
                 <description>White D1, D2; Black C1, C2, B3, B4, E1, E2.</description>
                 <latex-image>
@@ -40,6 +41,7 @@
       <answer>
         <p>
           Playing at D3 gives white's stones three liberties and a chance to escape.
+
             <image  width="50%">
                 <description>White D1, D2, D3; Black C1, C2, B3, B4, E1, E2.</description>
                 <latex-image>
@@ -143,6 +145,6 @@ Can I reference <xref ref="big-group-liberties" />?
 
 
 
-</p>
+</p>    
 
 </section>  
