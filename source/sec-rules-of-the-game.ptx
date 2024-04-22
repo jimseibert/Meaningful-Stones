@@ -5,552 +5,534 @@
 
   <p> There are very few rules in the game of go.  
 
-  <ul> 
-    <li>  Rule 1:  One player has white stones and the other player has black stones.  
-      To begin black places one stone on any intersection on a grid.
-      Players then alternate playing one stone each on any intersection of the grid.  
-      The grid is usually 19 <times/> 19, but the game can be played 
-      on boards of other sizes.  Boards of 9 <times/> 9 or 13 <times/> 13 are 
-      common for beginners.  </li>
-
-    <li>  Rule 2:  Surround your opponent's stones to capture them.  Captured stones are 
-      removed from the board and kept by the capturing player.  </li>
-
-    <li>  Rule 3:  The player with the most territory plus captures wins the game.
-      The game ends when both players decide there are no more moves remaining that will
-      increase their territory or reduce their opponent's territory, capture opponent's 
-      stones or protect their own stones from capture.  Territory is then counted as 
-      the number of open intersections surrounded by one player's stones.  </li>
-
-    <li>  Rule 4:  Placing a stone that results in self-capture is not allowed.  </li>
-    
-    <li>  Rule 5:  Repetition of an identical board position is not allowed 
-      (the <em>ko</em> rule). </li>
-
-    </ul>
-
-    The video below introduces these rules in more detail.  Watch the video 
-    and work through the examples to test your understanding.
-
-    <figure>
-      <caption>Michael Redmond <articletitle>The 5 Rules of Go</articletitle></caption>
-      <video xml:id="five-rules" youtube="KTWujSwL2bQ" width="80%" start="0"  />
-    </figure>
-
-</p>
-
-
-<example>
-  <title>Goups of stones</title>
-  <statement>
-    <p>
-      Recall that stones that are next to each other along horizontal or vertical lines
-      (but NOT diagonally)
-      are connected and form a single <em>group</em>.  In the following figure, how
-      many black groups are there?  How many white groups?
-
-      
-        <image  width="50%">
-            <description>Three black groups and two white groups.</description>
-            <latex-image>
-              \cleargoban
-              \black{b1,b2,c3,c4,d5,d6}
-              \white{c2,d2,d3,d4,e5,e6}
-              \showgoban
-            </latex-image>
-        </image>
-      
-    </p>
-  </statement>
-  <answer>
-    <p>
-      There are three black groups (one group marked with triangles, one marked with squares,
-      and one marked with circles) and two white groups (one marked with crosses and 
-      the other with unmarked stones).
+    <ul> 
+      <li>  Rule 1:  One player has white stones and the other player has black stones.  
+        To begin black places one stone on any intersection on a grid.
+        Players then alternate playing one stone each on any intersection of the grid.  
+        The grid is usually 19 <times/> 19, but the game can be played 
+        on boards of other sizes.  Boards of 9 <times/> 9 or 13 <times/> 13 are 
+        common for beginners.  </li>
   
+      <li>  Rule 2:  Surround your opponent's stones to capture them.  Captured stones are 
+        removed from the board and kept by the capturing player.  </li>
+  
+      <li>  Rule 3:  The player with the most territory plus captures wins the game.
+        The game ends when both players decide there are no more moves remaining that will
+        increase their territory or reduce their opponent's territory, capture opponent's 
+        stones or protect their own stones from capture.  Territory is then counted as 
+        the number of open intersections surrounded by one player's stones.  </li>
+  
+      <li>  Rule 4:  Placing a stone that results in self-capture is not allowed.  </li>
       
-       <image  width="50%">
-           <description>Three black groups and two white groups, with the groups marked.</description>
-           <latex-image>
-             \cleargoban
-             \black[\igotriangle]{b1,b2}
-             \black[\igosquare]{c3,c4}
-             \black[\igocircle]{d5,d6}
-             \white[\igocross]{c2,d2,d3,d4}
-             \white{e5,e6}
-             \showgoban
-           </latex-image>
-       </image>
+      <li>  Rule 5:  Repetition of an identical board position is not allowed 
+        (the <em>ko</em> rule). </li>
+  
+      </ul>
+  
+      The video below introduces these rules in more detail.  Watch the video 
+      and work through the examples to test your understanding.
+  
      
-    </p>
-    
-  </answer>
-</example>
-
-<example>
-  <title>Counting liberties</title>
-  <statement>  <idx>liberties</idx>
-    <p>
-      Remember that spaces next to a group of stones (along horizontal or vertical lines)
-      are called the <em>liberties</em> of the group.  
-      There are two groups in the figure below.  How many liberties does each have?
-
-      <image  width="50%">
-        <description>One black group and one white group of stones.</description>
-        <latex-image>
-          \cleargoban
-          \black{b1,b2,c1,c2,d2}
-          \white{c5,d5,e5,e6,f5}
-          \showgoban
-        </latex-image>
-    </image>
-
-    </p>
-  </statement>
-  <answer>
-    <p>
-      The black group has seven liberties, and the white group has ten.
-    </p>
-  </answer>
-  <solution>
-    <p>
-      Here the liberties are marked.
-      <image  width="50%">
-        <description>One black group and one white group of stones, each with their liberties marked.</description>
-        <latex-image>
-          \cleargoban
-          \black{b1,b2,c1,c2,d2}
-          \white{c5,d5,e5,e6,f5}
-          \gobansymbol{a1,a2,b3,c3,d3,e2,d1}{x}
-          \gobansymbol{c4,d4,e4,f4,g5,f6,e7,d6,c6,b5}{y}
-          \showgoban
-        </latex-image>
-    </image>
-    </p>
-  </solution>
-</example>
-
-<example>
-  <title>Locations on the Board</title>
-  <statement>
-    <p>
-      In order to talk about the location of stones on the board, it is helpful to have 
-      a notation for the intersections.  To do this we number the rows from bottom to 
-      top, and we use letters (starting with A and skipping I) across the bottom.  
-
-      <image  width="70%">
-        <description>A 19 by 19 board with rows and columns labeled.</description>
-        <latex-image>
-          \begin{tikzpicture}[scale=.8]
-
-
-\draw[step=1cm] (1,1) grid (19,19);
-
-\draw[very thick] (1,1) -- (19,1) (1,19) --(19,19)  (19,1) -- (19,19)  (1,1) -- (1,19);
-
-
-\fill (10,10) circle (.1cm);
-\fill (4,4) circle (.1cm);
-\fill (4, 10) circle (.1cm);
-\fill (4, 16) circle (.1cm);
-\fill (10, 4) circle (.1cm);
-\fill (10,16) circle (.1cm);
-\fill (16, 4) circle (.1cm);
-\fill (16, 10) circle (.1cm);
-\fill (16, 16) circle (.1cm);
-
-\draw (1, .5) node{A};
-\draw (2, .5) node{B};
-\draw (3, .5) node{C};
-\draw (4, .5) node{D};
-\draw (5, .5) node{E};
-\draw (6, .5) node{F};
-\draw (7, .5) node{G};
-\draw (8, .5) node{H};
-\draw (9, .5) node{J};
-\draw (10, .5) node{K};
-\draw (11,.5) node{L};
-\draw (12,.5) node{M};
-\draw (13,.5) node{N};
-\draw (14,.5) node{O};
-\draw (15,.5) node{P};
-\draw (16,.5) node{Q};
-\draw (17,.5) node{R};
-\draw (18,.5) node{S};
-\draw (19,.5) node{T};
-
-\draw (.5, 1) node{1};
-\draw (.5, 2) node{2};
-\draw (.5, 3) node{3};
-\draw (.5, 4) node{4};
-\draw (.5, 5) node{5};
-\draw (.5, 6) node{6};
-\draw (.5, 7) node{7};
-\draw (.5, 8) node{8};
-\draw (.5, 9) node{9};
-\draw (.5, 10) node{10};
-\draw (.5, 11) node{11};
-\draw (.5, 12) node{12};
-\draw (.5, 13) node{13};
-\draw (.5, 14) node{14};
-\draw (.5, 15) node{15};
-\draw (.5, 16) node{16};
-\draw (.5, 17) node{17};
-\draw (.5, 18) node{18};
-\draw (.5, 19) node{19};
-
-
-\fill[white] (4, 8) circle (.45cm);
-\draw (4,8) circle (.45cm);
-
-\fill[black] (12,17) circle (.45cm);
-
-\end{tikzpicture}
-        </latex-image>
-    </image>
-
-    The nine small dots on the board are called <em>star points</em>.  <idx>star points</idx>
-    They are simply there as reference points.  
-    We reference intersections by listing the letter first followed by the number.
-    For example, the white stone is at the D8 point.  The black stone is at the M17 point. 
-    The center star point, at K10, is sometimes referred to by its Japanese
-    name <em>tengen</em>. <idx>tengen</idx>  The corner star points are called 4-4 points (four
-    lines from the two nearest sides), but if we want to name a specific 4-4 point we 
-    can use the label D4, D16, Q4, or Q16.
-    </p>
-  </statement>
   
-  
-</example>
+  </p>
 
+      <figure>
+        <caption>Michael Redmond <articletitle>The 5 Rules of Go</articletitle></caption>
+        <video xml:id="five-rules" youtube="KTWujSwL2bQ" width="80%" start="0"  />
+      </figure>
 
-<example>
-  <title>Legal and Illegal Moves</title>
-  <statement>
-    <p>
-      Consider white's move in this corner situation. White can capture the black stone in 
-      the corner with a move at T2.
+      <example>
+        <title>Goups of stones</title>
+        <statement>
+          <p>
+            Recall that stones that are next to each other along horizontal or vertical lines
+            (but NOT diagonally)
+            are connected and form a single <em>group</em>.  In the following figure, how
+            many black groups are there?  How many white groups?
+           </p>
+            
+              <image  width="50%">
+                <shortdescription> Black B1, B2, C3, C4, D5, D6; White C2, D2, D3, D4, E5, E6. </shortdescription>
+                <latex-image>
+                 
+                  
+                    \cleargoban
+                    \black{b1,b2,c3,c4,d5,d6}
+                    \white{c2,d2,d3,d4,e5,e6}
+                    \showgoban
+                </latex-image>
+                  
+              </image>
+            
+         
+        </statement>
+        <answer>
+          <p>
+            There are three black groups (one group marked with triangles, one marked with squares,
+            and one marked with circles) and two white groups (one marked with crosses and 
+            the other with unmarked stones).
+          </p>
+            
+             <image  width="50%">
+              <shortdescription>Black triangle B1, B1; Black square C3, C4; Black circle D5, D6; White cross C2, D2, D3, D4; White unmarked E5, E6.</shortdescription>
+                 <latex-image>
+                   \cleargoban
+                   \black[\igotriangle]{b1,b2}
+                   \black[\igosquare]{c3,c4}
+                   \black[\igocircle]{d5,d6}
+                   \white[\igocross]{c2,d2,d3,d4}
+                   \white{e5,e6}
+                   \showgoban
+                 </latex-image>
+             </image>
+           
+          
+          
+        </answer>
+      </example>
+      
 
-      <image  width="50%">
-        <description>Black R1, R2, S3, T1; White S1, S2</description>
-        <latex-image>
-          \cleargoban
-          \black{r1,r2,s3,t1}
-          \white{s1,s2}
-          \showgoban
-        </latex-image>
-    </image>
+      <example>
+        <title>Counting liberties</title>  <idx>liberties</idx>
+        <statement>  
+          <p>
+            Remember that spaces next to a group of stones (along horizontal or vertical lines)
+            are called the <em>liberties</em> of the group.  
+            There are two groups in the figure below.  How many liberties does each have?
 
-      The result is  
-
-      <image  width="50%">
-        <description>Black R1, R2, S3; White S1, S2, T2</description>
-        <latex-image>
-          \cleargoban
-          \black{r1,r2,s3}
-          \white{s1,s2,t2}
-          \showgoban
-        </latex-image>
-    </image>
-
-      Now black cannot play in the corner at T1, as that would be an illegal self-capture.
-      Instead black plays at T3.
-
-      <image  width="50%">
-        <description>Black R1, R2, S3, T3; White S1, S2, T2</description>
-        <latex-image>
-          \cleargoban
-          \black{r1,r2,s3,t3}
-          \white{s1,s2,t2}
-          \showgoban
-        </latex-image>
-    </image>
-
-    Now white cannot play at T1 as that would result in the self-capture of the four white 
-    stones.  Let's say white plays at R3.
-
-    <image  width="50%">
-      <description>Black R1, R2, S3, T3; White S1, S2, T2, R3</description>
-      <latex-image>
-        \cleargoban
-        \black{r1,r2,s3,t3}
-        \white{s1,s2,t2,r3}
-        \showgoban
-      </latex-image>
-  </image>
-
-  Can black now play in the corner at T1?  Yes!  Enemy captures happen before self-captures.
-  If black was not capturing stones, the move would be illegal, but since black is capturing
-  stones, it is a legal move.
-
-  <image  width="50%">
-    <description>Black R1, R2, S3, T3, T1; White R3</description>
-    <latex-image>
-      \cleargoban
-      \black{r1,r2,s3,t3,t1}
-      \white{r3}
-      \showgoban
-    </latex-image>
-</image>
-
-    </p>
-  </statement>
-  
-</example>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<example>
-  <title>Counting the Score</title>
-  <statement>
-    <p>
-      Here is an example of a game that has finished on a 7 <times/> 7 board. 
-
-        <image  width="50%">
-            <description>A completed 7x7 game.</description>
+          </p> 
+      
+            <image  width="50%">
+              <shortdescription>Black B1, B2, C1, C2, D2;  White C5, D5, E5, E6, F5.</shortdescription>
+              <latex-image>
+                \cleargoban
+                \black{b1,b2,c1,c2,d2}
+                \white{c5,d5,e5,e6,f5}
+                \showgoban
+              </latex-image>
+          </image>
+      
+        
+        </statement>
+        <answer>
+          <p>
+            The black group has seven liberties, and the white group has ten.
+          </p>
+        </answer>
+        <solution>
+          <p>
+            Here the liberties are marked.
+          </p>
+            <image  width="50%">
+              <shortdescription>Black B1, B2, C1, C2, D2; White C5, D5, E5, E6, F5.  Black liberties marked with x's at A1, A2, B3, C3, D3, E2, and D1.  White liberties marked with y's at C4, D4, E4, F4, G5, F6, E7, D6, C6, and B5.</shortdescription>
+              <latex-image>
+                \cleargoban
+                \black{b1,b2,c1,c2,d2}
+                \white{c5,d5,e5,e6,f5}
+                \gobansymbol{a1,a2,b3,c3,d3,e2,d1}{x}
+                \gobansymbol{c4,d4,e4,f4,g5,f6,e7,d6,c6,b5}{y}
+                \showgoban
+              </latex-image>
+          </image>
+        </solution>
+      </example>
+      
+      <example>
+        <title>Locations on the Board</title>
+        <statement>
+          <p>
+            In order to talk about the location of stones on the board, it is helpful to have 
+            a notation for the intersections.  To do this we number the rows from bottom to 
+            top, and we use letters (starting with A and skipping I) across the bottom.  </p>
+      
+            <image  width="70%">
+              <shortdescription>A 19 by 19 board with rows and columns labeled.</shortdescription>
+              <latex-image>
+                \begin{tikzpicture}[scale=.8]
+      
+      
+      \draw[step=1cm] (1,1) grid (19,19);
+      
+      \draw[very thick] (1,1) -- (19,1) (1,19) --(19,19)  (19,1) -- (19,19)  (1,1) -- (1,19);
+      
+      
+      \fill (10,10) circle (.1cm);
+      \fill (4,4) circle (.1cm);
+      \fill (4, 10) circle (.1cm);
+      \fill (4, 16) circle (.1cm);
+      \fill (10, 4) circle (.1cm);
+      \fill (10,16) circle (.1cm);
+      \fill (16, 4) circle (.1cm);
+      \fill (16, 10) circle (.1cm);
+      \fill (16, 16) circle (.1cm);
+      
+      \draw (1, .5) node{A};
+      \draw (2, .5) node{B};
+      \draw (3, .5) node{C};
+      \draw (4, .5) node{D};
+      \draw (5, .5) node{E};
+      \draw (6, .5) node{F};
+      \draw (7, .5) node{G};
+      \draw (8, .5) node{H};
+      \draw (9, .5) node{J};
+      \draw (10, .5) node{K};
+      \draw (11,.5) node{L};
+      \draw (12,.5) node{M};
+      \draw (13,.5) node{N};
+      \draw (14,.5) node{O};
+      \draw (15,.5) node{P};
+      \draw (16,.5) node{Q};
+      \draw (17,.5) node{R};
+      \draw (18,.5) node{S};
+      \draw (19,.5) node{T};
+      
+      \draw (.5, 1) node{1};
+      \draw (.5, 2) node{2};
+      \draw (.5, 3) node{3};
+      \draw (.5, 4) node{4};
+      \draw (.5, 5) node{5};
+      \draw (.5, 6) node{6};
+      \draw (.5, 7) node{7};
+      \draw (.5, 8) node{8};
+      \draw (.5, 9) node{9};
+      \draw (.5, 10) node{10};
+      \draw (.5, 11) node{11};
+      \draw (.5, 12) node{12};
+      \draw (.5, 13) node{13};
+      \draw (.5, 14) node{14};
+      \draw (.5, 15) node{15};
+      \draw (.5, 16) node{16};
+      \draw (.5, 17) node{17};
+      \draw (.5, 18) node{18};
+      \draw (.5, 19) node{19};
+      
+      
+      \fill[white] (4, 8) circle (.45cm);
+      \draw (4,8) circle (.45cm);
+      
+      \fill[black] (12,17) circle (.45cm);
+      
+      \end{tikzpicture}
+              </latex-image>
+          </image>
+      
+         <p> The nine small dots on the board are called <em>star points</em>.  <idx>star points</idx>
+          They are simply there as reference points.  
+          We reference intersections by listing the letter first followed by the number.
+          For example, the white stone is at the D8 point.  The black stone is at the M17 point. 
+          The center star point, at K10, is sometimes referred to by its Japanese
+          name <em>tengen</em>. <idx>tengen</idx>  The corner star points are called 4-4 points (four
+          lines from the two nearest sides), but if we want to name a specific 4-4 point we 
+          can use the label D4, D16, Q4, or Q16.
+          </p>
+        </statement>
+        
+        
+      </example>
+      
+      <example>
+        <title>Legal and Illegal Moves</title>
+        <statement>
+          <p>
+            Consider white's move in this corner situation. White can capture the black stone in 
+            the corner with a move at T2.  </p>
+      
+            <image  width="50%">
+              <shortdescription>Black R1, R2, S3, T1; White S1, S2</shortdescription>
+              <latex-image>
+                \cleargoban
+                \black{r1,r2,s3,t1}
+                \white{s1,s2}
+                \showgoban
+              </latex-image>
+          </image>
+      
+          <p>      The result is  </p>
+      
+            <image  width="50%">
+              <shortdescription>Black R1, R2, S3; White S1, S2, T2</shortdescription>
+              <latex-image>
+                \cleargoban
+                \black{r1,r2,s3}
+                \white{s1,s2,t2}
+                \showgoban
+              </latex-image>
+          </image>
+      
+         <p>   Now black cannot play in the corner at T1, as that would be an illegal self-capture.
+            Instead black plays at T3.  </p>
+      
+            <image  width="50%">
+              <shortdescription>Black R1, R2, S3, T3; White S1, S2, T2</shortdescription>
+              <latex-image>
+                \cleargoban
+                \black{r1,r2,s3,t3}
+                \white{s1,s2,t2}
+                \showgoban
+              </latex-image>
+          </image>
+      
+         <p> Now white cannot play at T1 as that would result in the self-capture of the four white 
+          stones.  Let's say white plays at R3.  </p>
+      
+          <image  width="50%">
+            <shortdescription>Black R1, R2, S3, T3; White S1, S2, T2, R3</shortdescription>
             <latex-image>
               \cleargoban
-              \gobansize{7}
-              \black{d1,e1,g1,e2,g2,f3,d3,d4,e4,f4,g4,d5,c4,a5,b5,d6,d7}
-              \white{a1,c1,a2,c2,d2,b3,c3,a4,b4,e5,f5,g5,e6,g6,e7,f7}
+              \black{r1,r2,s3,t3}
+              \white{s1,s2,t2,r3}
               \showgoban
             </latex-image>
         </image>
-
-      Why is the game completed?  Neither side has any meaningful moves remaining.
-      (Meaningful moves either increase your territory or reduce your opponent's territory, 
-      threaten to capture stones or protect your stones from being captured.)
-      You might ask, "Why doesn't black play at B1?"  Well, white will immediately
-      play at B2, capturing the black stone.  The end result is that white's territory
-      is reduced by one since they placed an extra stone inside their own territory, but 
-      they increase their captures by one, resulting in no change to their overal score
-      (territory plus captures).  In general, there is no benefit to placing stones 
-      in your opponent's territory unless you have an opportunity to capture some
-      stones.      
-    </p>
-
-    <p>  Suppose that white
-      has captured 4 black stones and black has captured 3 white stones.  What is 
-      the final score of the game?  
-    </p>
-  </statement>
-
-    <answer>
-      <p>
-        Black has 14 points (11 points of territory and 3 captures), while white has 
-        9 points (five points of territory and four captures).  Black wins by five
-        points.
-      </p>
-    </answer>
-
-    <solution>
-      <p>
-        In online games, the computer will calculate the score for you, of course.  
-        For in-person games, counting the score by hand is done by first filling your
-        opponent's territory with your captures and then counting the remaining territory.
-
-        In this example, using captured stones to fill territory might look like 
-        the following.
-
+      
+       <p> Can black now play in the corner at T1?  Yes!  Enemy captures happen before self-captures.
+        If black was not capturing stones, the move would be illegal, but since black is capturing
+        stones, it is a legal move.  </p>
+      
         <image  width="50%">
-          <description>A completed 7x7 game, with territory filled by captures.</description>
+          <shortdescription>Black R1, R2, S3, T3, T1; White R3</shortdescription>
           <latex-image>
             \cleargoban
-            \gobansize{7}
-            \black{d1,e1,g1,e2,g2,f3,d3,d4,e4,f4,g4,d5,c4,a5,b5,d6,d7,e3,f1,f2,g3}
-            \white{a1,c1,a2,c2,d2,b3,c3,a4,b4,e5,f5,g5,e6,g6,e7,f7,a3,b1,b2}
+            \black{r1,r2,s3,t3,t1}
+            \white{r3}
             \showgoban
           </latex-image>
       </image>
-
-      After the captures have been placed, black now has 7 points of territory and 
-      white has two.  The final scores have changed but the difference is the same.
-      Black still wins by five.
-
-      </p>
-    </solution>
       
+        
+        </statement>
+        
+      </example>
+
+
+      <example>
+        <title>Counting the Score</title>
+        <statement>
+          <p>
+            Here is an example of a game that has finished on a 7 <times/> 7 board.   </p>
+      
+              <image  width="50%">
+                  <shortdescription>Black D1, E1, G1, E2, G2, F3, D3, D4, E4, F4, G4, D5, C4, A5, B5, D6, D7;  White A1, C1, A2, C2, D2, B3, C3, A4, B4, E5, F5, G5, E6, G6, E7, F7.</shortdescription>
+                  <latex-image>
+                    \cleargoban
+                    \gobansize{7}
+                    \black{d1,e1,g1,e2,g2,f3,d3,d4,e4,f4,g4,d5,c4,a5,b5,d6,d7}
+                    \white{a1,c1,a2,c2,d2,b3,c3,a4,b4,e5,f5,g5,e6,g6,e7,f7}
+                    \showgoban
+                  </latex-image>
+              </image>
+      
+           <p> Why is the game completed?  Neither side has any meaningful moves remaining.
+            (Meaningful moves either increase your territory or reduce your opponent's territory, 
+            threaten to capture stones or protect your stones from being captured.)
+            You might ask, "Why doesn't black play at B1?"  Well, white will immediately
+            play at B2, capturing the black stone.  The end result is that white's territory
+            is reduced by one since they placed an extra stone inside their own territory, but 
+            they increase their captures by one, resulting in no change to their overal score
+            (territory plus captures).  In general, there is no benefit to placing stones 
+            in your opponent's territory unless you have an opportunity to capture some
+            stones.      
+          </p>
+      
+          <p>  Suppose that white
+            has captured 4 black stones and black has captured 3 white stones.  What is 
+            the final score of the game?  
+          </p>
+        </statement>
+      
+          <answer>
+            <p>
+              Black has 14 points (11 points of territory and 3 captures), while white has 
+              9 points (five points of territory and four captures).  Black wins by five
+              points.
+            </p>
+          </answer>
+      
+          <solution>
+            <p>
+              In online games, the computer will calculate the score for you, of course.  
+              For in-person games, counting the score by hand is done by each player filling their
+              opponents' territory with their captures and then counting the remaining territory.
+      
+              In this example, using captured stones to fill territory might look like 
+              the following.   </p>
+      
+              <image  width="50%">
+                <shortdescription>A completed 7x7 game, with territory filled by captures.</shortdescription>
+                <latex-image>
+                  \cleargoban
+                  \gobansize{7}
+                  \black{d1,e1,g1,e2,g2,f3,d3,d4,e4,f4,g4,d5,c4,a5,b5,d6,d7,e3,f1,f2,g3}
+                  \white{a1,c1,a2,c2,d2,b3,c3,a4,b4,e5,f5,g5,e6,g6,e7,f7,a3,b1,b2}
+                  \showgoban
+                </latex-image>
+            </image>
+      
+          <p>  After the captures have been placed, black now has 7 points of territory and 
+            white has two.  The final scores have changed but the difference is the same.
+            Black still wins by five.
+      
+            </p>
+          </solution>
+            
+      
+      
+      
+        
+      </example>
 
 
 
-  
-</example>
 
-
-
-<example>
-  <title>The Ko Rule and Ko Fights</title>
-  <statement>
-    <p>  <idx>ko</idx>  <idx>ko fight</idx> <idx>ko threat</idx>
-      Suppose that white has just captured a black stone by placing the marked stone below. 
-
-        <image  width="50%">
-            <description>An simple example of a ko.</description>
+      <example>
+        <title>The Ko Rule and Ko Fights</title>
+        <statement> 
+          <p>  <idx>ko</idx>  <idx>ko fight</idx> <idx>ko threat</idx>
+            Suppose that white has just captured a black stone by placing the marked stone below. </p>
+      
+              <image  width="50%">
+                  <shortdescription>Black C2, C3, D2, E3;  White C4, E4, D5, D3.</shortdescription>
+                  <latex-image>
+                    \cleargoban
+                    \gobansize{19}
+                    \black{c2,c3,d2,e3}
+                    \white{c4,e4,d5}
+                    \white[\igotriangle]{d3}
+                    \showgoban
+                  </latex-image>
+              </image>
+      
+          <p>  Black cannot immediately recapture with a move at D4 (the 
+            star point) because of the ko rule.  
+          </p>
+      
+          <p>  Black must play somewhere else on the board. Suppose black plays at F3, extending
+            their weak stone.  White now has a choice.  White can play elsewhere on the board,
+            or they can play at D4 ending the "ko fight."  </p>
+      
+            <image  width="50%">
+              <shortdescription>Same as previous with Black F3 and White D4.</shortdescription>
+              <latex-image>
+                \cleargoban
+                \gobansize{19}
+                \black{c2,c3,d2,e3,f3}
+                \white{c4,e4,d3,d4,d5}
+                \showgoban
+              </latex-image>
+          </image>
+      
+          <p>  Here white has ended the ko.  White is left with an inefficient clump of stones, but they 
+          have lots of liberties and are not in immediate danger.
+      
+          </p>
+      
+          <p>  
+          Here's a more complicated example of a ko.  As before, white has just taken the 
+          stone at D4 to start the ko.  This time black has a better move, the marked stone at G3.
+          This kind of move is called a "ko threat."  It threatens to take something more
+          valuable than the ko, forcing your opponent to respond away from the ko and allowing
+          you to retake the ko.  </p>
+      
+          <image  width="50%">
+            <shortdescription> Black C2, C3, D2, E3, F1, F2, F3, G1, J2, K1, K2, G3;  White C4, E4, D3, D5, G2, H1, H2, J1, G4, H4.</shortdescription>
             <latex-image>
               \cleargoban
               \gobansize{19}
-              \black{c2,c3,d2,e3}
-              \white{c4,e4,d5}
-              \white[\igotriangle]{d3}
+              \black{c2,c3,d2,e3,f1,f2,f3,g1,j2,k1,k2}
+              \white{c4,e4,d5,g2,h1,h2,j1,g4,h4}
+              \white[1]{d3,g3}
               \showgoban
             </latex-image>
-        </image>
-
-      Black cannot immediately recapture with a move at D4 (the 
-      star point) because of the ko rule.  
-    </p>
-
-    <p>  Black must play somewhere else on the board. Suppose black plays at F3, extending
-      their weak stone.  White now has a choice.  White can play elsewhere on the board,
-      or they can play at D4 ending the "ko fight."
-
-      <image  width="50%">
-        <description>An simple example of a ko fight ended.</description>
-        <latex-image>
-          \cleargoban
-          \gobansize{19}
-          \black{c2,c3,d2,e3,f3}
-          \white{c4,e4,d3,d4,d5}
-          \showgoban
-        </latex-image>
-    </image>
-
-    Here white has ended the ko.  White is left with an inefficient clump of stones, but they 
-    have lots of liberties and are not in immediate danger.
-
-    </p>
-    <p>  
-    Here's a more complicated example of a ko.  As before, white has just taken the 
-    stone at D4 to start the ko.  This time black has a better move, the marked stone at G3.
-    This kind of move is called a "ko threat."  It threatens to take something more
-    valuable than the ko, forcing your opponent to respond away from the ko and allowing
-    you to retake the ko.
-
-    <image  width="50%">
-      <description>White starts a ko.  Black has a ko threat.</description>
-      <latex-image>
-        \cleargoban
-        \gobansize{19}
-        \black{c2,c3,d2,e3,f1,f2,f3,g1,j2,k1,k2}
-        \white{c4,e4,d3,d5,g2,h1,h2,j1,g4,h4}
-        \black[\igotriangle]{g3}
-        \showgoban
-      </latex-image>
-    </image>
-
-    In this case black is threatening the four white stones.  White has to choose between
-    saving the four white stones and ending the ko.  If white saves the four stones, then 
-    black can re-take the ko with a stone at D4.
-    
-    <image  width="50%">
-      <description>White responds to the ko threat.</description>
-      <latex-image>
-        \cleargoban
-        \black{c2,c3,d2,e3,f1,f2,f3,g1,j2,k1,k2,g3,d4}
-        \white{c4,e4,d5,g2,h1,h2,j1,g4,h4,h3}
-        \showgoban
-      </latex-image>
-    </image>
-
-    Now it's white's turn to look for a ko threat somewhere else on the board.  If they 
-    can force black to respond elsewhere, then white can re-take the ko.  If they can't  
-    find a ko threat, then black can play at D3 ending the ko.
-
-    This process of taking turns looking for ko threats and retaking the ko is called a 
-    ko fight.  It is a natural consequence of the ko rule.
-  </p>
-  
-  </statement>
-
-   
+          </image>
       
-</example>
+        <p>  In this case black is threatening the four white stones.  White has to choose between
+          saving the four white stones and ending the ko.  If white saves the four stones, then 
+          black can re-take the ko with a stone at D4.    </p>
+          
+          <image  width="50%">
+            <shortdescription> Same as previous with White H3 added, and Black captures at D4.</shortdescription>
+            <latex-image>
+              \cleargoban
+              \black{c2,c3,d2,e3,f1,f2,f3,g1,j2,k1,k2}
+              \white{c4,e4,d5,g2,h1,h2,j1,g4,h4}
+              \black[2]{g3,h3,d4}
+              \showgoban
+            </latex-image>
+          </image>
+      
+        <p>  Now it's white's turn to look for a ko threat somewhere else on the board.  If they 
+          can force black to respond elsewhere, then white can re-take the ko.  If they can't  
+          find a ko threat, then black can play at D3 ending the ko.
+      
+          This process of taking turns looking for ko threats and retaking the ko is called a 
+          ko fight.  It is a natural consequence of the ko rule.
+        </p>
+        
+        </statement>
+      
+         
+            
+      </example>
 
 
 
-
-
-
-
-
-<exercises xml:id="exercises-rules">
-  <title>Exercises</title>
-
-  <exercise>
-    <statement>
-      <p>
-        How many groups are depicted in this board?  How many liberties does each group have?  How many unoccupied liberties does each group have?
-
-
-        <image  width="50%">
-          <description>Two black groups and three white groups.</description>
-          <latex-image>
-            \cleargoban
-            \black{j8,j9,j10,k9,l9,k11,l11,m11}
-            \white{k10,l10,m10,m9,j11,h11,h10,k8,l8}
-            \showgoban
-          </latex-image>
-      </image>
-      </p>
-    </statement>
-    <hint>
-      <p>
-        Remember that diagonal stones are NOT connected!
-      </p>
-    </hint>
-    <solution>
-      <p>
-        There are two black groups and three white groups, numbered below.
-        <image  width="50%">
-          <description>Two black groups and three white groups, numbered.</description>
-          <latex-image>
-            \cleargoban
-            \black{j8,j9,j10,k9,l9,k11,l11,m11}
-            \white{k10,l10,m10,m9,j11,h11,h10,k8,l8}
-            \white[1]{h11,j9,l8,l11,m10}
-            \showgoban
-          </latex-image>
-      </image>
-      <ul>
-        <li>Group 1 has 3 stones, 7 total liberties, and 5 unoccupied liberties. </li>
-
-        <li>Group 2 has 5 stones, 10 total liberties, and 3 unoccupied liberties. </li>
-
-        <li>Group 3 has 2 stones, 6 total liberties, and 3 unoccupied liberties. </li>
-
-        <li>Group 4 has 3 stones, 8 total liberties, and 4 unoccupied liberties. </li>
-
-        <li>Group 5 has 4 stones, 9 total liberties, and 3 unoccupied liberties. </li>
-      </ul>
-      </p>
-    </solution>
-  </exercise>
-  
-  
-  
-</exercises>
+      <exercises xml:id="exercises-rules">
+        <title>Exercises</title>
+      
+        <exercise>
+          <statement>
+            <p>
+              How many groups are depicted in this board?  How many liberties does each group have?  How many unoccupied liberties does each group have?  </p>
+      
+      
+              <image  width="50%">
+                <shortdescription>Black J8, J9, J10, K9, L9, K11, L11, M11; White K10, L10, M10, M9, J11, H11, H10, K8, L8.</shortdescription>
+                <latex-image>
+                  \cleargoban
+                  \black{j8,j9,j10,k9,l9,k11,l11,m11}
+                  \white{k10,l10,m10,m9,j11,h11,h10,k8,l8}
+                  \showgoban
+                </latex-image>
+            </image>
+          </statement>
+          <hint>
+            <p>
+              Remember that diagonal stones are NOT connected!
+            </p>
+          </hint>
+          <solution>
+            <p>
+              There are two black groups and three white groups, numbered below.  </p>
+              <image  width="50%">
+                <shortdescription>Two black groups and three white groups, numbered.</shortdescription>
+                <latex-image>
+                  \cleargoban
+                  \black{j8,j9,j10,k9,l9,k11,l11,m11}
+                  \white{k10,l10,m10,m9,j11,h11,h10,k8,l8}
+                  \white[1]{h11,j9,l8,l11,m10}
+                  \showgoban
+                </latex-image>
+            </image>
+            <p>   <ul>
+              <li>Group 1 has 3 stones, 7 total liberties, and 5 unoccupied liberties. </li>
+      
+              <li>Group 2 has 5 stones, 10 total liberties, and 3 unoccupied liberties. </li>
+      
+              <li>Group 3 has 2 stones, 6 total liberties, and 3 unoccupied liberties. </li>
+      
+              <li>Group 4 has 3 stones, 8 total liberties, and 4 unoccupied liberties. </li>
+      
+              <li>Group 5 has 4 stones, 9 total liberties, and 3 unoccupied liberties. </li>
+            </ul>
+            </p>
+          </solution>
+        </exercise>
+        
+        
+        
+      </exercises>
+      
+      
 
 </section>
+

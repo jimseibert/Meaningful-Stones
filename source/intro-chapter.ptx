@@ -3,15 +3,17 @@
 <chapter xml:id="intro-chapter" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>What is Go?</title>
 
-  <introduction>
+  <introduction> <idx>weichi</idx>  <idx>baduk</idx>  <idx>go</idx>
     <p> Go is a game.  </p> 
-    
+     </introduction>
+
+    <section>  <title>  Introduction </title>
     <p>Go is the oldest game in the world, with evidence of it being 
       played for thousands of years in China.
       
     </p>
     
-    <idx>weichi</idx>  <idx>baduk</idx>
+   
     <p>  In China the game is called Weichi - the surrounding 
       game.  The game reached Korea in (about) the 5th century CE,
       where it is called Baduk.  The game reached Japan in (about) the 7th century, where it 
@@ -34,8 +36,8 @@
       Go is a complex game with more possible outcomes than there are atoms in the known universe!
     </p>
 
-  </introduction>
-
+ 
+  </section>
  
 
 

@@ -5,12 +5,14 @@
 <idx>atari</idx>
   <p> A group of stones is captured when all of its liberties are taken by their
     opponent's stones.  When a group has only one liberty remaining, the group
-    is one move away from being captured and we say the group is in <em>atari</em>. 
+    is one move away from being captured and we say the group is <em>in atari</em>. 
     <fn>(If you are as old as me, you might be familiar with Atari as the name of a 
-    video game company.  Atari was a term in go first!) </fn> 
+    video game company.  Atari was a term in Go first!) </fn> 
     We also use the word
     atari as a verb in statements like, "I will atari your stones with the following move." 
+    </p>
 
+    <p>  
     When stones are in atari we have to decide whether we want to try to save them from capture.  In order to save a group in atari
     we must play to give the group more liberties.  We can do that by capturing some of the stones taking our liberties, or (possibly) by
     extending our group at the point of its last liberty.
@@ -22,10 +24,10 @@
       <title>Saving Stones in Atari</title>
       <statement>
         <p>
-          On the following board, assume it is white's move and notice that the two white stones are in atari.  Where can white play to save their stones?
+          On the following board, assume it is white's move and notice that the two white stones are in atari.  Where can white play to save their stones?  </p>
 
             <image  width="50%">
-                <description>White D1, D2; Black C1, C2, B3, B4, E1, E2.</description>
+                <shortdescription>White D1, D2; Black C1, C2, B3, B4, E1, E2.</shortdescription>
                 <latex-image>
                   \cleargoban
                   \white{d1,d2}
@@ -35,15 +37,15 @@
             </image>
 
 
-        </p>
+      
       </statement>
 
       <answer>
         <p>
-          Playing at D3 gives white's stones three liberties and a chance to escape.
+          Playing at D3 gives white's stones three liberties and a chance to escape.  </p>
 
             <image  width="50%">
-                <description>White D1, D2, D3; Black C1, C2, B3, B4, E1, E2.</description>
+                <shortdescription>White D1, D2, D3; Black C1, C2, B3, B4, E1, E2.</shortdescription>
                 <latex-image>
                   \cleargoban
                   \white{d1,d2,d3}
@@ -51,8 +53,6 @@
                   \showgoban
                 </latex-image>
             </image>
-
-        </p>
       </answer>
       
     </example>
@@ -65,9 +65,9 @@
       <title>Stones in Atari</title>
       <statement>
         <p>
-          Consider the following situation.  Which group of stones is in atari?  
+          Consider the following situation.  Which group of stones is in atari?  </p>
             <image  width="50%">
-                <description>White A2, B2, B3, B4, C5, C6, B6, A6; Black B1, C1, C2, C3, C4, B5, A4, A5.</description>
+                <shortdescription>White A2, B2, B3, B4, C5, C6, B6, A6; Black B1, C1, C2, C3, C4, B5, A4, A5.</shortdescription>
                 <latex-image>
                   \cleargoban
                   \white{a2,b2,b3,b4,c5,c6,b6,a6}
@@ -75,13 +75,14 @@
                   \showgoban
                 </latex-image>
               </image>
+          <p>
           The black group on the left is the only group in atari.  (The white group on the bottom has two liberties.) 
           Notice that there is nothing black can do to gain more liberties!  Black can't place a stone at A3 since that
-          would be a self-capture, and black cannot capture stones in one move.  
+          would be a self-capture, and black cannot capture stones in one move.  </p>
           
-          Suppose black plays at A1.  Now which stones are in atari?
+          <p>  Suppose black plays at A1.  Now which stones are in atari?  </p>
             <image  width="50%">
-                <description>White A2, B2, B3, B4, C5, C6, B6, A6; Black B1, C1, C2, C3, C4, B5, A4, A5, A1.</description>
+                <shortdescription>White A2, B2, B3, B4, C5, C6, B6, A6; Black B1, C1, C2, C3, C4, B5, A4, A5, A1.</shortdescription>
                 <latex-image>
                   \cleargoban
                   \white{a2,b2,b3,b4,c5,c6,b6,a6}
@@ -90,10 +91,10 @@
                 </latex-image>
             </image>
 
-          Now the four white stones at the bottom and the three black stones are both in atari, but it's white's turn.  Can white play at A3?
-          Yes!  White A3 captures the three black stones!
+          <p>  Now the four white stones at the bottom and the three black stones are both in atari, but it's white's turn.  Can white play at A3?
+          Yes!  White A3 captures the three black stones!  </p>
             <image  width="50%">
-                <description>White A2, B2, B3, B4, C5, C6, B6, A6, A3; Black B1, C1, C2, C3, C4, A1.</description>
+                <shortdescription>White A2, B2, B3, B4, C5, C6, B6, A6, A3; Black B1, C1, C2, C3, C4, A1.</shortdescription>
                 <latex-image>
                   \cleargoban
                   \white{a2,b2,b3,b4,c5,c6,b6,a6,a3}
@@ -101,50 +102,20 @@
                   \showgoban
                 </latex-image>
             </image>
-        </p>
+        
       </statement>
     </example>
  
  
+<p>  Intersections on the edge of the board have fewer adjecent intersections, so stones there have fewer liberties.    
+Here is a short video showing some common capturing races near the edge of the board, and you can see how the 
+edge of the board is used to help capture stones.   </p>
 
 
-
-
-
-<p>    
-When stones of the same color are on adjacent intersections (horizontally or vertically, 
-<em>not diagonally</em>) we say they are connected.  A connected group of stones shares 
-their liberties.  For example, in <xref ref="group-liberties" /> the group of two stones in 
-the middle of the board share six liberties, and the group of two stones along the 
-edge share four.
-
-<figure  xml:id="group-liberties">
-  <image  width="50%">
-      <description>Two adjacent stones, edge and middle, liberties marked.</description>
-      <latex-image>
-        \cleargoban
-        \black{c1,d1,f4,f5}
-        \gobansymbol{b1,c2,d2,e1,f3,g4,g5,f6,e5,e4}{a}
-        \showgoban
-      </latex-image>
-  </image>
+<figure>
+  <caption>Michael Redmond <articletitle>Chasing Stones</articletitle></caption>
+  <video xml:id="chasing-stones" youtube="3QvtfawSE9A" width="80%" start="0"  />
 </figure>
 
-<figure  xml:id="big-group-liberties">
-  <image  width="50%">
-      <description>Two adjacent stones, edge and middle, liberties marked.</description>
-      <latex-image>
-        \cleargoban
-        \black{c1,d1,d2,d3,d4}
-        \gobansymbol{b1,c2,c3,c4,d5,e4,e3,e2,e1}{a}
-        \showgoban
-      </latex-image>
-  </image>
-</figure>
-Can I reference <xref ref="big-group-liberties" />?
-
-
-
-</p>    
 
 </section>  
