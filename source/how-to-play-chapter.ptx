@@ -13,4 +13,6 @@
 
   <xi:include href="sec-capturing-stones.ptx" />
 
+  <xi:include href="sec-shapes.ptx" />
+
 </chapter>

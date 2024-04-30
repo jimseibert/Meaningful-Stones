@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-shapes" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Good and Bad Shapes</title>
+
+<idx><h>empty triangle</h></idx>  <idx><h>ponnuki</h></idx>
+
+<introduction>
+    <idx>solid connection</idx> <idx><h>diagonal connection</h></idx> <idx><h>one-space jump</h></idx>
+
+  <p>  When playing your first few games, the number of possibilities available seems overwhelming.  Which moves are good?  Which moves are bad?  How can we decide?
+    To help narrow down the possibilities it helps to become familiar with some common shapes that appear in games of Go.  You will often hear Go players talk about "making good shape."
+    The first concept to understand is how to efficiently build shapes while keeping your stones connected.  Once again, we turn to Michael Redmond for the basics.
+  </p>
+
+  <figure>
+    <caption>Michael Redmond <articletitle>Connected Shapes</articletitle></caption>
+    <video xml:id="connected-shapes" youtube="f1StapE-Qvg" width="80%" start="0"  />
+  </figure>
+
+
+</introduction>
+    
+ <subsection xml:id="subsec-looser-connections">
+    <title>Looser Connections</title>
+    
+    <idx><h>knights move</h></idx> <idx><h>large knights move</h></idx> <idx><h>cut</h></idx>  <idx><h>diagonal jump</h></idx>
+
+ <p>
+    There are even more efficient ways to expand, but they are riskier.  Perhaps the most common is the knight's move.  The knight's move is two steps in one direction and
+    one step in another, like a knight moves in chess.
+    It stretches a little farther than a one-space jump
+    but it is easier for your opponent to separate, or cut, the two stones. 
+ </p>
+
+ <image  width="50%">
+    <shortdescription>Black Q16, O17</shortdescription>
+    <latex-image>
+      \cleargoban
+      \black{o17,q16}
+      \showgoban
+    </latex-image>
+  </image>
+
+<p> Here's one possible sequence that shows how white can cut the black knight's move into two separate groups. </p>
+
+<image  width="50%">
+    <shortdescription>Black Q16, O17, White P16, Black P17, White Q17</shortdescription>
+    <latex-image>
+      \cleargoban
+      \black{o17,q16}
+      \white[1]{p16,p17,q17}
+      \showgoban
+    </latex-image>
+  </image>
+
+<p>
+    Unless black can capture one of white's cutting stones, the two black groups will remain separated.  Of course, the two white stones are also cut, so what we really have here
+    is the start of a fight!  Black has to be aware of this possiblity, and white will have to evaluate whether the fight helps them before attempting the cut.  
+    The knight's move is especially strong near the edges of the board, where one of the 
+    cutting stones will be in danger of being run into the edge of the board and captured.  
+</p>
+
+<p>
+    The diagonal jump is another loose connection, stretching a bit farther and a little easier to cut.  The diagonal jump is called <em>hazama tobi</em> in Japanese,
+    and is sometimes called the elephant jump because it reflects how the elephant piece moves in Chinese chess.
+</p>
+
+<image  width="50%">
+    <shortdescription>Black Q15, O17</shortdescription>
+    <latex-image>
+      \cleargoban
+      \black{o17,q15}
+      \showgoban
+    </latex-image>
+  </image>
+
+<p>
+    You can see how white could keep these two black stones from connecting by placing a stone right in the middle.  This will, of course, lead to a complicated fight!
+</p>
+
+<p>
+    Jumping any farther than this is too loose to consider a true connection, but instead form larger structures that outline potential territories.  Moves like 
+    a two-space or three-space jump are usually referred to as extensions.  The large knight's move shown here is another extension usually only played near the edge
+    of the board.
+
+</p>
+
+<image  width="50%">
+    <shortdescription>Black Q16, N17</shortdescription>
+    <latex-image>
+      \cleargoban
+      \black{n17,q16}
+      \showgoban
+    </latex-image>
+  </image>
+
+
+ </subsection>
+
+<subsection xml:id="subsec-Eyes">
+    <title>Eyes</title>
+
+      
+    
+
+      
+</subsection>
+
+
+
+
+
+</section>  
