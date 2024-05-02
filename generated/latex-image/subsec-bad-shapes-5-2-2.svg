@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="46pt" height="47pt" viewBox="0 0 46 47">
+<defs>
+<g id="font_1_1">
+<mask id="mask_2">
+<image id="image_3" width="94" height="94" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAF4AAABeCAAAAACPufyyAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAAASUlEQVR4nO3QoQ0AMAwDwey/tAuLXSmg0j12DmSmKt28LFn18Xg8
+Ho/H4/F4PB6Px+PvxWJf8+u/x+PxeDwej8fj8Xg8Ho9/4A/KPCX3MFR5/gAAAABJ
+RU5ErkJggg=="/>
+</mask>
+<rect x="0" y="0" width="94" height="94" transform="matrix(.0120399999,0,0,-.0120399999,-.01204,1.05952)" mask="url(#mask_2)"/>
+</g>
+<g id="font_1_10">
+<mask id="mask_4">
+<image id="image_5" width="94" height="94" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAF4AAABeCAAAAACPufyyAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAAAQUlEQVR4nO3ZsQ0AIAwDQfZf2hRMkCIiiLs6+t7KWiWpnRclrX35
+e3kAAAAYJunZwjnhl/MNXQAAAJjq7Vf8Z/kNwqY+wsNAGjcAAAAASUVORK5CYII="/>
+</mask>
+<rect x="0" y="0" width="94" height="94" transform="matrix(.0120399999,0,0,-.0120399999,-.01204,1.05952)" mask="url(#mask_4)"/>
+</g>
+<g id="font_6_0">
+<mask id="mask_7">
+<image id="image_8" width="83" height="83" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAAAAADG2WTcAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAAAxklEQVR4nO3YQQ6AMAhEUe9/aTXGGDWtwDCzINI9b1v4y2K+9fns
+gRCXh6cgyhogwLrEkOoW3WpI9Klh0kYB0kAh8VuFyTmaIGdoihyjSXKEpskBKjAJ
+5BulkC9UYJLIO0ojb6jAJJIXWsSkkidaxCSTB9om1aSTO9pmm2222SZmVvk7fm1W
+2cEkZpXdW2JWubkk92aZW1vSGco0FklfknQwSa+TdEVJ/0TVTxFDLVLSvaOqSwyp
+btGthkQPGwcNFgUnsD2wASsnyF9ozVJOAAAAAElFTkSuQmCC"/>
+</mask>
+<rect x="0" y="0" width="83" height="83" transform="matrix(.0120399999,0,0,-.0120399999,.04816,.98728)" mask="url(#mask_7)"/>
+</g>
+</defs>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963197,0,0,-9.963397,1.2141724,12.016682)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963197,0,0,-9.963397,12.074051,12.016682)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963197,0,0,-9.963397,22.933938,12.016682)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963197,0,0,-9.963397,33.79383,12.016682)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963197,0,0,-9.963397,1.2141724,22.885552)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963197,0,0,-9.963397,12.074051,22.885552)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963197,0,0,-9.963397,22.933938,22.885552)"/>
+<use data-text="&#xfffd;" xlink:href="#font_6_0" transform="matrix(9.963197,0,0,-9.963397,22.952469,22.885552)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963197,0,0,-9.963397,33.82113,22.885552)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963197,0,0,-9.963397,1.21418,33.75442)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_10" transform="matrix(9.963197,0,0,-9.963397,12.074066,33.75442)"/>
+<use data-text="&#xfffd;" xlink:href="#font_6_0" transform="matrix(9.963197,0,0,-9.963397,12.083832,33.75442)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963197,0,0,-9.963397,22.952477,33.75442)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963197,0,0,-9.963397,33.81237,33.75442)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963197,0,0,-9.963397,1.21418,44.62429)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963197,0,0,-9.963397,12.074066,44.62429)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963197,0,0,-9.963397,22.933953,44.62429)"/>
+<use data-text="&#xfffd;" xlink:href="#font_1_1" transform="matrix(9.963197,0,0,-9.963397,33.793848,44.62429)"/>
+</svg>
