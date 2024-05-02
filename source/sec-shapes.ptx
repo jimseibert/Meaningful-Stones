@@ -3,7 +3,7 @@
 <section xml:id="sec-shapes" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Good and Bad Shapes</title>
 
-<idx><h>empty triangle</h></idx>  <idx><h>ponnuki</h></idx>
+
 
 <introduction>
     <idx>solid connection</idx> <idx><h>diagonal connection</h></idx> <idx><h>one-space jump</h></idx>
@@ -26,7 +26,7 @@
     
     <idx><h>knights move</h></idx> <idx><h>large knights move</h></idx> <idx><h>cut</h></idx>  <idx><h>diagonal jump</h></idx>
 
- <p>
+ <p>  The video covered solid connections, diagonal connections, and the one-space jump.
     There are even more efficient ways to expand, but they are riskier.  Perhaps the most common is the knight's move.  The knight's move is two steps in one direction and
     one step in another, like a knight moves in chess.
     It stretches a little farther than a one-space jump
@@ -101,14 +101,653 @@
 <subsection xml:id="subsec-Eyes">
     <title>Eyes</title>
 
-      
-    
+ <idx><h>ponnuki</h></idx>  <idx><h>eye</h></idx>  <idx><h>alive</h></idx> <idx><h>dead</h></idx>
 
+      <p>
+        The diamond shape shown here is called a "ponnuki," the Japanese term for bloom, and is a very powerful shape.  There is a Go proverb that says "A ponnuki is worth 30 
+        points."  
+      </p>
+    
+      <image  width="50%">
+        <shortdescription>Black D5, E4, E6, F5</shortdescription>
+        <latex-image>
+          \cleargoban
+          \black{d5,e4,e6,f5}
+          \showgoban
+        </latex-image>
+      </image>
       
+<p>
+    A ponnuki radiates power in all directions, and is very hard to attack.  It creates one space on the board (right in the middle) 
+    that it is illegal for your opponent to play (unless capturing).
+    It is progress toward creating a shape called an eye, which we will see is a very important concept.
+</p>
+
+<p>
+    A rough definition of an eye is that it is an empty space surrrounded by stones of one color (like a ponnuki) that can be connected into a chain of solidly connected
+    stones surrounding the empty point.  The following example shows that a group with one eye can be captured.
+</p>
+
+<example>
+    <title>One Eye</title>
+    <statement>
+        <p>
+            The following board shows a black group with one eye.  What would white have to do to capture this group?
+        </p>
+        <image  width="50%">
+            <shortdescription>Black D4, D5, D6, E4, E6, F5, F6</shortdescription>
+            <latex-image>
+              \cleargoban
+              \black{d4,d5,d6,e4,e6,f5,f6}
+              \showgoban
+            </latex-image>
+          </image>
+
+    </statement>
+<answer>
+    <p>
+        White cannot place a stone in the middle unless they are capturing, so they first have to fill all of the outside liberties.  Once they do, however, the black stones will
+        be in atari, black cannot place in the middle (an illegal self-capture), so white can place in the middle and capture the whole black group.
+    </p>
+    <image  width="50%">
+        <shortdescription>Black D4, D5, D6, E4, E6, F5, F6, White taking all outside liberties.</shortdescription>
+        <latex-image>
+          \cleargoban
+          \black{d4,d5,d6,e4,e6,f5,f6}
+          \white{c4,c5,c6,d3,d7,e3,e7,f4,f7,g5,g6}
+          \showgoban
+        </latex-image>
+      </image>
+
+</answer>
+
+</example>
+
+    <p>
+        The rules of Go say nothing about eyes, but an important consequence of the rules is that a group with two eyes cannot be captured.  A group with two eyes 
+        is said to be <em>alive</em>.  A group that can be reduced to one eye (or no eyes) can be captured eventually and is said to be <em>dead</em>.  The following example examines a 
+        group with two eyes.
+    </p>
+
+<example>
+    <title>Two Eyes Makes Life</title>
+    <statement>
+        <p>
+            The following board shows a black group with two eyes surrounded by white stones.  Is there anything white can do to capture the black group?
+        </p>
+
+        <image  width="50%">
+            <shortdescription>Black D4, D5, D6, E4, E6, F5, F6, G4, G6,H4, H5, H6; White taking all outside liberties.</shortdescription>
+            <latex-image>
+              \cleargoban
+              \black{d4,d5,d6,e4,e6,f5,f6,g4,g6,h4,h5,h6}
+              \white{c4,c5,c6,d3,d7,e3,e7,f3,f4,f7,g3,g7,h3,h7,j4,j5,j6}
+              \showgoban
+            </latex-image>
+          </image>
+
+
+
+    </statement>
+    <answer>
+        <p>
+            White cannot place a stone in either of the empty spaces in black's group (illegal self-captures), but white has to fill both of those liberties to capture the 
+            black stones!  The black group is alive and permanently safe.
+        </p>
+    </answer>
+</example>
+
+<p>
+    It is worth saying again.  This is a surprising consequence of the rules.  The rules say nothing about eyes, but the need for a group to have two eyes emerges as 
+    perhaps the most important concept in Go!  If you cannot give a group of stones two eyes, then that group of stones will be (eventually) captured.  Making shapes
+    with two-eyes is an extremely important skill! 
+</p>
+
+</subsection>
+
+<subsection xml:id="subsec-other-good-shapes">
+    <title>Other Good Shapes</title>
+
+    <idx><h>mouth shape</h></idx>  <idx><h>table shape</h></idx>  <idx><h>bamboo joint</h></idx>
+
+    <p>
+        Shapes are generally called "good" when they can easily be made into eyes, or when they form a solid connection.  Here we outline some commonly occurring good shapes.  If you
+        make these shapes in your games, you are doing well!
+    </p>
+
+<example>
+    <title>Mouth Shape</title>
+    <statement>
+        <p>
+            The following black stones form what is called the mouth shape.  The mouth shape is an efficient arrangement of stones that virtually guarantees a group with 
+            one eye.
+        </p>
+        <image  width="50%">
+            <shortdescription>Black D4, D5, E3, F3, F5</shortdescription>
+            <latex-image>
+              \cleargoban
+              \black{d4,d5,e3,f3,f5}
+              \showgoban
+            </latex-image>
+          </image>
+    </statement>
+    
+</example>
+
+<example>
+    <title>Table Shape</title>
+    <statement>
+        <p>
+            The following black stones form what is called the table shape.  The table shape can be made into the mouth shape by adding one stone.  It is more efficient
+            since it requires one less stone, and is almost as good as mouth shape at creating potential for an eye.
+        </p>
+        <image  width="50%">
+            <shortdescription>Black D4, D5, F3, F5</shortdescription>
+            <latex-image>
+              \cleargoban
+              \black{d4,d5,f3,f5}
+              \showgoban
+            </latex-image>
+          </image>
+
+
+    </statement>
+    
+</example>
+
+<example>
+    <title>Bamboo Joint</title>
+    <statement>
+        <p>
+            A bamboo joint shown here isn't easy to turn into an eye, but it does form a solid connection that your opponent cannot cut.
+        </p>
+        <image  width="50%">
+            <shortdescription>Black D4, D5, F4, F5</shortdescription>
+            <latex-image>
+              \cleargoban
+              \black{d4,d5,f4,f5}
+              \showgoban
+            </latex-image>
+          </image>
+
+
+    </statement>
+    
+</example>
+
+
 </subsection>
 
 
+<subsection xml:id="subsec-bad-shapes">
+    <title>Some Bad Shapes</title>
+    
+    <p>
+        Bad shapes are shapes that are very inefficient at creating eyes.  Big clumps of stones with no eyes, sometimes called dumplings, are obviously bad.
+        The following example shows a clump that might naturally arise in a game.
+    </p>
+
+    <example>
+      <title>The B-52 Bomber</title>
+      <statement>
+        <p>
+          Consider the following board situation.  Black was trying to attack the white stones, but has left cutting points at A and B, and should to try to protect
+          one or the other.  
+        </p>
+
+        <image  width="50%">
+          <shortdescription>Black C5, D4, E3, E2; White B4, C4, C3, D3, D2; A at D5, B at E4</shortdescription>
+          <latex-image>
+            \cleargoban
+            \black{c5,d4,e3,e2}
+            \white{b4,c4,c3,d3,d2}
+            \gobansymbol{d5}{A}
+            \gobansymbol{e4}{B}
+            \gobansymbol{e5}{x}
+            \showgoban
+          </latex-image>
+        </image>
+
+        <p>
+          What will happen if black tries to protect both cutting points with a move at E5 (marked with an x)?
+        </p>
+      </statement>
+
+        <answer>
+          <p>
+            One possible sequence might look like this.  Do you see the B-52 bomber shape?
+          </p>
+
+          <image  width="50%">
+            <shortdescription>Black C5, D4, E3, E2; White B4, C4, C3, D3, D2; </shortdescription>
+            <latex-image>
+              \cleargoban
+              \black{c5,d4,e3,e2}
+              \white{b4,c4,c3,d3,d2}
+              \black[1]{e5,f4,e4,d6,d5}
+              \showgoban
+            </latex-image>
+          </image>
+
+          <p> I've also heard Black's shape called the "big stupid triangle" in this situation.  Black has a big clump of stones that are not surrounding any territory.  
+          They are not making any space for eyes to form.  They are just inefficiently placed stones.  When this is the result, it is safe to say that Black probably 
+          should have played otherwise earlier on.  In this case, trying to fix both cuts with one move at E5 was a mistake.
+          </p>
+        </answer>
+
+    
+    
+    </example>
+
+<p>
+  Another, perhaps more subtle, example of bad shape is what is called the "empty triangle."  Strong players try to avoid making empty triangles if they can.
+</p>
+
+<example>
+  <title>The Empty Triangle</title>
+  <statement>
+    <p>
+      Recall that one good way to make a connection is with a diagonal move.
+    </p>
+
+    <image  width="50%">
+      <shortdescription>Black F7, G8</shortdescription>
+      <latex-image>
+        \cleargoban
+        \black{f7,g8}
+        \showgoban
+      </latex-image>
+    </image>
+    <p>
+      If White tries to cut on either side, then Black can play the other point to strongly connect the two stones.
+    </p>
+    <image  width="50%">
+      <shortdescription>Black F7, G8, G7; White F8</shortdescription>
+      <latex-image>
+        \cleargoban
+        \black{f7,g8,g7}
+        \white{f8}
+        \showgoban
+      </latex-image>
+    </image>
+    <p>
+      Here the black stones are forming a triangle that is filled in by the white stone.  This is natural and good!  White forced black to make the triangle by threatening
+      to cut.  
+    </p>
+    <p>
+      If Black makes that triangle shape without the white stone there, that is what is called an empty triangle.  Black has wasted a move by fixing the cut before White
+      even threatened it.  In most cases, Black would rather have the diagonal connection without the triangle.  Making the empty triangle is another inefficient shape.
+    </p>
+    <p>(Sometimes making an empty triangle is the best move in a 
+      given situation.  Whenever you see yourself about to make an empty triangle, though, you should look to see if there are better options!)
+    </p>
+
+  </statement>
+  <answer>
+    <p>
+      Avoid this shape if you can!
+    </p>
+    <image  width="50%">
+      <shortdescription>Black F7, G8, G7; White F8</shortdescription>
+      <latex-image>
+        \cleargoban
+        \black{f7,g8,g7}
+        \showgoban
+      </latex-image>
+    </image>
+
+  </answer>
 
 
+</example>
 
+
+<p>
+  The final example more about tactics than specifically about shape.  There is a Go proverb, "Don't attach to a weak stone."
+  The reason for this is that doing so generally makes the opponent's weak stone stronger, and gives them an advantage over your attaching stone.
+</p>
+
+<example>
+  <title>Attaching to a Weak Stone</title>
+  <statement>
+    <p>
+      Here we see that White has attached to a weak Black stone.  Think of this as a capturing race between the two stones.  When White attached, that 
+      reduced Black's liberties by one (from four to three).  However, the White stone also has reduced their own liberties!  Both stones have three liberties,
+      and it is Black's turn.  Black has the advantage in that capturing race.
+    </p>
+
+    <image  width="50%">
+      <shortdescription>Black F3; White G3</shortdescription>
+      <latex-image>
+        \cleargoban
+        \black{f3}
+        \white{g3}
+        \showgoban
+      </latex-image>
+      </image>
+
+      <p>
+        Even if Black doesn't try to take up White's liberties right away, Black can extend their stone, increasing the liberty count of the Black group.
+      </p>
+
+      <image  width="50%">
+        <shortdescription>Black F3; White G3</shortdescription>
+        <latex-image>
+          \cleargoban
+          \black{f3,f4}
+          \white{g3}
+          \showgoban
+        </latex-image>
+        </image>
+        <p>
+          If the Black stone was weak before, it certainly looks stronger now.  All White has accomplished is strengthening their opponent's stone!
+        </p>
+
+        <p>
+          In general, if you want to attack a weak stone, it is much better to build a loose net around it, hopefully while building up potential territory for yourself
+          on the other side of the stones that you play.
+        </p>
+
+      </statement>
+  
+</example>
+
+</subsection>
+
+<subsection xml:id="subsec-dead-shapes">
+  <title>Live and Dead Shapes</title>
+
+  <p>
+    Now that we know about living and dead groups, and the importance of having two eyes, we can look at some common shapes and decide if they are alive or dead.
+    A group that has two eyes is alive.  A group that can be reduced to one (or fewer) eyes is dead.
+  </p>
+  
+<example>
+  <title>Three Spaces</title>
+  <statement>
+    <p>
+      Any group surrounding just three spaces is a dead shape (assuming it is your opponent's turn).
+    </p>
+
+
+    <image  width="50%">
+      <shortdescription>White 3 space territory, surrounded by Black</shortdescription>
+      <latex-image>
+        \cleargoban
+        \black{e4,e3,f3,g3,h3,j3,k4,k5,k6,j7,h7,g7,f7,e7,d7,d6,d5}
+        \white{f4,g4,h4,j4,j5,j6,h6,g6,f6,e6,e5}
+        \showgoban
+      </latex-image>
+      </image>
+<p>
+  How can Black prevent the White group from forming two eyes?
+</p>
+  </statement>
+  
+  <answer>
+    <idx><h>vital point</h></idx>
+    <p>
+      A <em>vital point</em> in a shape is a point that determines the life or death of the shape.  If Black plays the vital point, the shape dies.  If White plays
+      the vital point, the shape gains two eyes and unconditionally lives.
+      The vital point is the middle of the three spaces.
+    </p>
+
+    <image  width="50%">
+      <shortdescription>White 3 space territory, surrounded by Black, Black plays the middle point.</shortdescription>
+      <latex-image>
+        \cleargoban
+        \black{e4,e3,f3,g3,h3,j3,k4,k5,k6,j7,h7,g7,f7,e7,d7,d6,d5,g5}
+        \white{f4,g4,h4,j4,j5,j6,h6,g6,f6,e6,e5}
+        \showgoban
+      </latex-image>
+      </image>
+
+<p>
+  If White plays on either side to atari this stone, it is actually self-atari and Black captures the whole group.
+</p>
+<p>
+  If White plays elsewhere, normally Black would also leave this alone, knowing it is a dead shape.  At the end of the game, both players would agree that 
+  the White stones are dead, they would be taken off the board and given to Black as captures.
+  </p>
+  <p>
+    If Black really wants to capture these stones (or needs to in order to prevent something else from being captured), Black can play a second stone inside White's territory
+    placing White in atari. 
+  </p>
+  <image  width="50%">
+    <shortdescription>White 3 space territory, surrounded by Black, Black plays the middle point plus one.</shortdescription>
+    <latex-image>
+      \cleargoban
+      \black{e4,e3,f3,g3,h3,j3,k4,k5,k6,j7,h7,g7,f7,e7,d7,d6,d5,g5,h5}
+      \white{f4,g4,h4,j4,j5,j6,h6,g6,f6,e6,e5}
+      \showgoban
+    </latex-image>
+    </image>
+<p>
+  If White captures the two stones, Black can again play inside, putting the White stones in atari once more.
+</p>
+<image  width="50%">
+  <shortdescription>White 2 space territory, surrounded by Black, Black plays inside.</shortdescription>
+  <latex-image>
+    \cleargoban
+    \black{e4,e3,f3,g3,h3,j3,k4,k5,k6,j7,h7,g7,f7,e7,d7,d6,d5,h5}
+    \white{f4,g4,h4,j4,j5,j6,h6,g6,f6,e6,e5,f5}
+    \showgoban
+  </latex-image>
+  </image>
+  <p>
+    If White captures again, White has created a one space territory completely surrounded by Black.  White is in atari and will be captured on the next move.
+  </p>
+  <image  width="50%">
+    <shortdescription>White 1 space territory, surrounded by Black, is in atari.</shortdescription>
+    <latex-image>
+      \cleargoban
+      \black{e4,e3,f3,g3,h3,j3,k4,k5,k6,j7,h7,g7,f7,e7,d7,d6,d5}
+      \white{f4,g4,h4,j4,j5,j6,h6,g6,f6,e6,e5,f5,g5}
+      \showgoban
+    </latex-image>
+    </image>
+    <p>
+      It doesn't matter whether the three spaces are in a row (as shown) or bent.  The same logic applies, and the middle point is the vital point.  The life and death of the 
+      group is determined by who plays the vital point.
+    </p>
+
+  <p>
+    If White is allowed to play on the vital middle point, then White has a two-eye, living group.  White is unconditionally alive.
+  </p>
+  <image  width="50%">
+    <shortdescription>White two-eyed group.</shortdescription>
+    <latex-image>
+      \cleargoban
+      \black{e4,e3,f3,g3,h3,j3,k4,k5,k6,j7,h7,g7,f7,e7,d7,d6,d5}
+      \white{f4,g4,h4,j4,j5,j6,h6,g6,f6,e6,e5,g5}
+      \showgoban
+    </latex-image>
+    </image>
+  </answer>
+
+</example>
+
+<p>
+  If a three-space group is dead, what about a four-space group?  The answer is that it depends!  If the four spaces form a squareor a T-shape, Black can kill the groups.
+  Any other arrangement of four spaces is generally alive.  (There are some exceptions, but they are 
+  complicated and rare.)
+</p>
+
+<example>
+  <title>Four Spaces (Alive)</title>
+  <statement>
+    <p>
+      When four spaces are not in a square or a T shape, there is no way for Black to prevent white from dividing the territory into two eyes.
+    </p>
+    <image  width="50%">
+      <shortdescription>White 4 space territory in an L shape, surrounded by Black.</shortdescription>
+      <latex-image>
+        \cleargoban
+        \black{e4,e3,f3,g3,h3,j3,k4,k5,k6,k7,j8,h8,g7,f7,e7,d7,d6,d5}
+        \white{f4,g4,h4,j4,j5,j6,j7,h7,g6,f6,e6,e5}
+        \showgoban
+      </latex-image>
+      </image>
+
+  </statement>
+  <answer>
+    <p>
+      If White is allowed to play at either A or B, White's group will have two eyes.  If Black plays at either of these points, White can play on the other and live.
+    </p>
+    <image  width="50%">
+      <shortdescription>White 4 space territory in an L shape, surrounded by Black.  Two middle points marked A and B</shortdescription>
+      <latex-image>
+        \cleargoban
+        \black{e4,e3,f3,g3,h3,j3,k4,k5,k6,k7,j8,h8,g7,f7,e7,d7,d6,d5}
+        \white{f4,g4,h4,j4,j5,j6,j7,h7,g6,f6,e6,e5}
+        \gobansymbol{g5}{A}
+        \gobansymbol{h5}{B}
+        \showgoban
+      </latex-image>
+      </image>
+  </answer>
+</example>
+
+<example>
+  <title>Four Spaces (Square)</title>
+  <statement>
+    <p>
+      When White has four spaces in a square shape, Black can play anywhere inside.  If White plays anywhere inside, the group is reduced to three spaces and dies. 
+      (If White neve plays inside, Black will eventually atari and kill.)
+    </p>
+  </statement>
+  
+</example>
+
+<example>
+  <title>Four Spaces (T-shape)</title>
+  <statement>
+    <p>  When White has four spaces in a T-shape, the vital point is the center point.  If Black plays there, White has no way to make two eyes.  If White plays there, 
+      then white has a living group (with three eyes).
+      
+    </p>
+    <image  width="50%">
+      <shortdescription>White 4 space territory in a T-shape, surrounded by Black.  Middle points marked x</shortdescription>
+      <latex-image>
+        \cleargoban
+        \black{e4,e3,f3,g3,h3,j3,k4,k5,k6,j7,j8,h8,g8,f7,e7,d7,d6,d5}
+        \white{f4,g4,h4,j4,j5,j6,h6,h7,g7,f6,e6,e5}
+        \gobansymbol{g5}{x}
+        \showgoban
+      </latex-image>
+      </image>
+  </statement>
+  
+</example>
+
+<example>
+  <title>Bulky Five</title>
+  <statement>
+  
+    <p>  <idx><h>bulky five</h></idx>
+      A bulky five shape is a square with an extra space added.  This can be killed.  Can you find the vital point?
+    </p>
+    <image  width="50%">
+      <shortdescription>White bulky five, surrounded by Black.</shortdescription>
+      <latex-image>
+        \cleargoban
+        \black{e4,e3,f3,g3,h3,j3,k4,k5,k6,k7,j8,h8,g8,f7,e7,d7,d6,d5}
+        \white{f4,g4,h4,j4,j5,j6,j7,h7,g7,f6,e6,e5}
+        \showgoban
+      </latex-image>
+      </image>
+  </statement>
+  <answer>
+    <p>
+      The vital point is marked.  If Black plays here, there is no way for White to make two eyes.  If White plays here, they have two eyes and are unconditionally alive. 
+    </p>
+    <image  width="50%">
+      <shortdescription>White bulky five, surrounded by Black.  Vital point in the square, next to the extra space.</shortdescription>
+      <latex-image>
+        \cleargoban
+        \black{e4,e3,f3,g3,h3,j3,k4,k5,k6,k7,j8,h8,g8,f7,e7,d7,d6,d5}
+        \white{f4,g4,h4,j4,j5,j6,j7,h7,g7,f6,e6,e5}
+        \gobansymbol{g5}{x}
+        \showgoban
+      </latex-image>
+      </image>
+  </answer>
+</example>
+
+<example>
+  <title>Cross Five</title>
+  <statement>
+   
+    <p> <idx><h>cross five</h></idx>
+      Five spaces in the shape of a cross can be killed.  Can you find the vital point?
+    </p>
+    <image  width="50%">
+      <shortdescription>White cross five, surrounded by Black.</shortdescription>
+      <latex-image>
+        \cleargoban
+        \black{e7,e6,e5,e4,e3,f3,f2,g2,h2,j2,k2,k3,l4,l5,l6,k7,j7,j8,h8,g8,f7}
+        \white{g3,h3,j3,j4,k4,k5,k6,j6,h7,g7,g6,f6,f5,f4,g4}
+        \showgoban
+      </latex-image>
+      </image>
+
+
+  </statement>
+  <answer>
+    <p>
+      The vital point is in the center, of course!
+    </p>
+    <image  width="50%">
+      <shortdescription>White cross five, surrounded by Black.</shortdescription>
+      <latex-image>
+        \cleargoban
+        \black{e7,e6,e5,e4,e3,f3,f2,g2,h2,j2,k2,k3,l4,l5,l6,k7,j7,j8,h8,g8,f7}
+        \white{g3,h3,j3,j4,k4,k5,k6,j6,h7,g7,g6,f6,f5,f4,g4}
+        \gobansymbol{h5}{x}
+        \showgoban
+      </latex-image>
+      </image>
+  </answer>
+</example>
+
+<example>   
+  
+  <title>Rabbity Six</title>
+  <statement>
+ 
+    <p> <idx><h>rabbity six</h></idx>
+      A square with two extra spaces on either side of a corner (sticking out like rabbit ears) is called a rabbity six shape.  This shape can be killed! 
+      Can you find the vital point?
+    </p>
+    <image  width="50%">
+      <shortdescription>Rabbity six, surrounded by Black.</shortdescription>
+      <latex-image>
+        \cleargoban
+        \black{d3,e3,f3,g3,h3,j4,j5,k5,k6,k7,j8,j9,h9,g9,f9,e9,e8,d7,d6,d5,d4}
+        \white{e4,f4,g4,h4,h5,j6,j7,h7,h8,g8,f8,f7,e7,e6,e5}
+        \showgoban
+      </latex-image>
+      </image>
+
+
+  </statement>
+  <answer>
+    <p>
+      The vital point is the corner at the base of the "ears."
+    </p>
+    <image  width="50%">
+      <shortdescription>Rabbity six, surrounded by Black.</shortdescription>
+      <latex-image>
+        \cleargoban
+        \black{d3,e3,f3,g3,h3,j4,j5,k5,k6,k7,j8,j9,h9,g9,f9,e9,e8,d7,d6,d5,d4}
+        \white{e4,f4,g4,h4,h5,j6,j7,h7,h8,g8,f8,f7,e7,e6,e5}
+        \gobansymbol{g6}{x}
+        \showgoban
+      </latex-image>
+      </image>
+  </answer>
+</example>
+
+
+</subsection>
 </section>  

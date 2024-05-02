@@ -216,7 +216,7 @@ edge of the board is used to help capture stones.   </p>
 <p>
   Now if we run out the ladder, white escapes!  Black cannot atari white in one move, and look at all the moves white can make to put black stones in atari!
   This is one surprising way in which a capturing race on one side of the board can depend on stones on the opposite side of the board.  Familiarize
-  yourself with the ladder shape.  It is am important one!
+  yourself with the ladder shape.  It is an important one!
 </p>
 
 <image  width="50%">
@@ -229,6 +229,15 @@ edge of the board is used to help capture stones.   </p>
     \showgoban
   </latex-image>
 </image>
+
+<p>
+  Here's a video from Nick Sibicky all about reading ladders.  It's a longer video (about 40 minutes) and includes some practice problems and their solutions.  Pause the 
+  video and try the problems for yourself before looking at the solutions!
+</p>
+<figure>
+  <caption>Nick Sibicky <articletitle>Ladder Problems</articletitle></caption>
+  <video xml:id="ladders" youtube="tUYuOyNb4So" width="80%" start="0"  />
+</figure>
 
 </subsection>
 
