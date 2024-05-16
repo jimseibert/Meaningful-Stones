@@ -474,7 +474,25 @@
             
       </example>
 
+      <theorem xml:id="theorem-quadratic-formula">
+        <title>Quadratic Formula</title>
 
+        <statement>
+            <p>Given the second-degree polynomial equation <m>ax^2 + bx + c = 0</m>, where <m>a\neq0</m>, solutions are given by <me>x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}.</me></p>
+        </statement>
+        <proof>
+            <p><md>
+                <mrow>ax^2 + bx + c &amp;= 0</mrow>
+                <mrow>ax^2 + bx &amp;= -c</mrow>
+                <mrow>4ax^2 + 4bx &amp;= -4c</mrow>
+                <mrow>4ax^2 + 4bx + b^2 &amp;= b^2 - 4ac</mrow>
+                <mrow>(2ax + b)^2 &amp;= b^2 - 4ac</mrow>
+                <mrow>2ax + b &amp;=\pm\sqrt{b^2 - 4ac}</mrow>
+                <mrow>2ax &amp;=-b\pm\sqrt{b^2 - 4ac}</mrow>
+                <mrow>x &amp;=\frac{-b\pm\sqrt{b^2 - 4ac}}{2a}</mrow>
+            </md></p>
+        </proof>
+    </theorem>
 
       <exercises xml:id="exercises-rules">
         <title>Exercises</title>
@@ -529,13 +547,6 @@
         </exercise>
         
 
-
-
-
-
-      </exercises>
-      
-      
-
+ </exercises>
 </section>
 
